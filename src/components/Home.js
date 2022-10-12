@@ -12,7 +12,7 @@ import {
 import React from "react";
 import xsxsa from "../assets/xsxsa.png";
 
-function Header() {
+function Home() {
   const { colorMode } = useColorMode();
   const isDark = colorMode === "dark";
 
@@ -87,4 +87,4 @@ function Header() {
     </Stack>
   );
 }
-export default Header;
+export default Home;

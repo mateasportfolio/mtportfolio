@@ -1,18 +1,20 @@
 import React from "react";
-import {
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  Button,
-  // ChevronDownIcon,
-} from "@chakra-ui/react";
+// import {
+//   Menu,
+//   MenuButton,
+//   MenuList,
+//   MenuItem,
+//   Button,
+//   // ChevronDownIcon,
+// } from "@chakra-ui/react";
 
 function MenuPage() {
   return (
     <div>
-      <Menu>
-        <MenuButton as={Button}>MENU</MenuButton>
+      {/* <Menu>
+        <MenuButton as={Button} p={20} color="pink.400" spacing="24">
+          Click Me!
+        </MenuButton>
         <MenuList>
           <MenuItem>Code</MenuItem>
           <MenuItem>Hoisting</MenuItem>
@@ -20,7 +22,7 @@ function MenuPage() {
           <MenuItem>Delete</MenuItem>
           <MenuItem>Attend a Workshop</MenuItem>
         </MenuList>
-      </Menu>
+      </Menu> */}
     </div>
   );
 }
