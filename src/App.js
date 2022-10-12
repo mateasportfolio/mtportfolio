@@ -28,15 +28,20 @@ function App() {
   return (
     <VStack p={5}>
       <Flex w="100%">
-        <Heading ml="8" size="md" fontWeight="semibold" color="cyan.400">
+        <Heading ml="10" size="md" fontWeight="semibold" color="purple.400">
           <Menu>
-            <MenuButton as={Button}>Menu</MenuButton>
+            <MenuButton
+              as={Button}
+              p={4}
+              bgGradient="linear(to-r, purple.400, cyan.500, blue.600)"
+              textColor="white"
+            >
+              Menu
+            </MenuButton>
             <MenuList>
               <MenuItem>Code</MenuItem>
               <MenuItem>Hoisting</MenuItem>
               <MenuItem>Work</MenuItem>
-              <MenuItem>Delete</MenuItem>
-              <MenuItem>Attend a Workshop</MenuItem>
             </MenuList>
           </Menu>
         </Heading>
@@ -44,24 +49,28 @@ function App() {
         <Spacer></Spacer>
         <IconButton
           ml={4}
+          color={isDark ? "whiteAlpha.1000" : "pink.200"}
           icon={<FaGithub />}
           isRound="true"
           onClick={toggleColorMode}
         ></IconButton>
         <IconButton
           ml={4}
+          color={isDark ? "whiteAlpha.1000" : "pink.200"}
           icon={<FaFreeCodeCamp />}
           isRound="true"
           onClick={toggleColorMode}
         ></IconButton>
         <IconButton
           ml={4}
+          color={isDark ? "whiteAlpha.1000" : "pink.200"}
           icon={<FaLinkedin />}
           isRound="true"
           onClick={toggleColorMode}
         ></IconButton>
         <IconButton
           ml={8}
+          color={isDark ? "whiteAlpha.1000" : "pink.200"}
           icon={isDark ? <FaSun /> : <FaMoon />}
           isRound="true"
           onClick={toggleColorMode}
