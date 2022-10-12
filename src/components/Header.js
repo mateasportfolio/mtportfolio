@@ -6,7 +6,7 @@ import {
   Flex,
   Box,
   Text,
-  Button,
+  //Button,
   Image,
 } from "@chakra-ui/react";
 import React from "react";
@@ -21,8 +21,8 @@ function Header() {
     <Stack>
       <Circle
         position="absolute"
-        bg="purple.100"
-        opacity="0.1"
+        bg="#ff009c"
+        opacity="0.05"
         w="300px"
         h="300px"
         alignSelf="flex-end"
@@ -51,20 +51,32 @@ function Header() {
             epekworks.com. Im a Free Spirit,interested into Art, Music, learning
             new skills and Technology.
           </Text>{" "}
-          <Button
+          {/* <Button
             ml={8}
             p={6}
             position="asbsolute"
             colorScheme="pink"
             onClick={() => window.open()}
           >
-            Code
+            Page
           </Button>
         </Box>
+        <Button
+          ml={8}
+          p={6}
+          position="asbsolute"
+          colorScheme="pink"
+          onClick={() => window.open()}
+        >
+          Hosting
+        </Button> */}
+        </Box>
+
         <Image
           alignSelf="center"
           mt={isNotSmallerScreen ? "0" : "12"}
           mb={isNotSmallerScreen ? "0" : "12"}
+          maxWidth={{ base: "100vh", md: "130vh", lg: "130vh", xl: "130vh" }}
           borderRadius="full"
           backgroundColor="transparent"
           boxShadow="lg"

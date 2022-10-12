@@ -15,8 +15,9 @@ import {
   FaGithub,
 } from "react-icons/fa";
 import Header from "./components/Header";
-import Profile from "./components/Profile";
+import Code from "./components/Code";
 import Net from "./components/Net";
+import MenuPage from "./components/MenuPage";
 
 function App() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -26,7 +27,7 @@ function App() {
     <VStack p={5}>
       <Flex w="100%">
         <Heading ml="8" size="md" fontWeight="semibold" color="cyan.400">
-          Mateas Portfolio
+          CHAKRA UI
         </Heading>
 
         <Spacer></Spacer>
@@ -58,7 +59,8 @@ function App() {
       <Header></Header>
       <Box p={10}></Box>
       <Net></Net>
-      <Profile></Profile>
+      <MenuPage></MenuPage>
+      <Code></Code>
     </VStack>
   );
 }
