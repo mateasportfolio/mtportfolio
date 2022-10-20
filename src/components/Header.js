@@ -18,8 +18,13 @@ import {
   FaGithub,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
+//import { Route } from "react-router-dom";
 
 export const Header = ({ isDark, toggleColorMode }) => {
+  const onClick = (href) => {
+    window.open(href, "url");
+  };
+
   return (
     <Flex w="100%">
       <Heading ml="10" size="md" fontWeight="semibold" color="purple.400">
@@ -55,22 +60,26 @@ export const Header = ({ isDark, toggleColorMode }) => {
         color={isDark ? "whiteAlpha.1000" : "pink.200"}
         icon={<FaGithub />}
         isRound="true"
-        onClick={toggleColorMode}
+        onClick={() => onClick("https://github.com/mateasportfolio")}
       ></IconButton>
+
       <IconButton
         ml={4}
         color={isDark ? "whiteAlpha.1000" : "pink.200"}
         icon={<FaFreeCodeCamp />}
         isRound="true"
-        onClick={toggleColorMode}
+        onClick={() => onClick("https://github.com/mateasportfolio")}
       ></IconButton>
       <IconButton
         ml={4}
         color={isDark ? "whiteAlpha.1000" : "pink.200"}
         icon={<FaLinkedin />}
         isRound="true"
-        onClick={toggleColorMode}
+        onClick={() =>
+          onClick("https://www.linkedin.com/in/matea-tabak-83440a230/")
+        }
       ></IconButton>
+
       <IconButton
         ml={8}
         color={isDark ? "whiteAlpha.1000" : "pink.200"}
