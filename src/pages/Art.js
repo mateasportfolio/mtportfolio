@@ -1,12 +1,14 @@
 import React from "react";
-import { Image, Stack, Box, VStack } from "@chakra-ui/react";
+import { Image, Stack, Box, VStack, useMediaQuery } from "@chakra-ui/react";
 import klausur from "../assets/klausur.svg";
 import Schmuck from "../assets/Schmuck.svg";
 //import { Grid, GridItem } from "@chakra-ui/react";
 
 const Art = () => {
+  const [isNotSmallerScreen] = useMediaQuery("(min-width: 600px)");
+
   return (
-    <Stack direction="row">
+    <Stack direction={isNotSmallerScreen ? "row" : "column"}>
       <Image
         boxSize="300%"
         w="600px"
