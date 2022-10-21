@@ -4,7 +4,7 @@ import { Header } from "./components/Header";
 import Home from "./pages/Home";
 import Code from "./pages/Code";
 import Hosting from "./pages/Hosting";
-import Work from "./pages/Work";
+import Art from "./pages/Art";
 
 function App() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -17,7 +17,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/code" element={<Code />} />
         <Route path="/hosting" element={<Hosting />} />
-        <Route path="/work" element={<Work />} />
+        <Route path="/art" element={<Art />} />
       </Routes>
     </VStack>
   );

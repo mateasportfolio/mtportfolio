@@ -1,9 +1,10 @@
 import React from "react";
-import { Image, Stack, Box } from "@chakra-ui/react";
+import { Image, Stack, Box, VStack } from "@chakra-ui/react";
 import klausur from "../assets/klausur.svg";
 import Schmuck from "../assets/Schmuck.svg";
+//import { Grid, GridItem } from "@chakra-ui/react";
 
-const Work = () => {
+const Art = () => {
   return (
     <Stack direction="row">
       <Image
@@ -28,22 +29,42 @@ const Work = () => {
         rounded="md"
       />
 
-      <Image
-        alignSelf="absolute"
+      {/* <Image
         backgroundColor="pink.200"
         bg="linear-gradient(#ffc0eb, #9198e5)"
         opacity={1}
         boxShadow="dark-lg"
-        boxSize="300%"
-        p="6px"
         w="40%"
         m="20px"
+        pl="2"
+        pr="2"
+        pt="2"
         position="relative"
         shadow="outline"
         src={Schmuck}
-      />
+      /> */}
+      <VStack>
+        <Box p="20px" m="50px">
+          <Image
+            objectFit="cover"
+            backgroundColor="pink.200"
+            bg="linear-gradient(#ffc0eb, #9198e5)"
+            opacity={1}
+            boxShadow="red"
+            w="300px"
+            h="10o%"
+            m="12"
+            pl="2"
+            pr="2"
+            pt="2"
+            position="relative"
+            shadow="outline"
+            src={Schmuck}
+          />
+        </Box>
+      </VStack>
     </Stack>
   );
 };
 
-export default Work;
+export default Art;
