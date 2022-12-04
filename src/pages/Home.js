@@ -49,7 +49,7 @@ function Home() {
           </Text>
           <Text color={isDark ? "pink.200" : "pink.500"} p="4" fontSize="2xl">
             {" "}
-            I'm a future Mediadesigner/Webdesigner, having an Internship at
+            I'm a future Mediadesigner / Webdesigner, having an Internship at
             epekworks.com.
             <span>
               Im a Free Spirit,interested into Art, Music, learning new skills
