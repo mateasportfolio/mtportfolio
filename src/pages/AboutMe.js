@@ -46,11 +46,12 @@ const AboutMe = () => {
             <Heading color="whiteAlpha.900" size="Xl">
               Language
             </Heading>
-            <ListItem>German, English, Croatian</ListItem>
+            <ListItem>German, Croatian, English</ListItem>
           </UnorderedList>
-          <Lottie animationData={brush} />
+          <Lottie animationData={brush} height={800} width={100} />
         </VStack>
       </Stack>
+
       <Stack bg="linear-gradient(#A88BEB ,#F8CEEC)" p="70px" m="3rem">
         <Heading color="whiteAlpha.900" size="Xl">
           Contact
