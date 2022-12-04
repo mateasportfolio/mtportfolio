@@ -1,11 +1,12 @@
 import React from "react";
-import { Box, useMediaQuery, VStack, Image } from "@chakra-ui/react";
+import { Box, useMediaQuery, VStack } from "@chakra-ui/react";
 import { Stack, Heading, Text } from "@chakra-ui/react";
 import { ListItem, UnorderedList } from "@chakra-ui/react";
 import { PhoneIcon, EmailIcon } from "@chakra-ui/icons";
 import { FaLocationArrow } from "react-icons/fa";
 import Lottie from "lottie-react";
 import developer from "../assets/developer.json";
+import brush from "../assets/brush.json";
 
 const AboutMe = () => {
   const [isNotSmallerScreen] = useMediaQuery("(min-width: 768px)");
@@ -20,23 +21,21 @@ const AboutMe = () => {
             Education
           </Heading>
           <UnorderedList>
-            <ListItem color="whiteAlpha.700">
+            <ListItem>
               2022 - Internship Webdesign / Webdevelopment at epekworks
             </ListItem>
-            <ListItem color="whiteAlpha.700">
+            <ListItem>
               2021-Aktuell GPB Gesellschaft für Personalentwicklung und Bildung
               mbh ( Apprentice as a Media designer - Digital und Print,
               Schwerpunkt Web)
             </ListItem>
-            <ListItem color="whiteAlpha.700">
+            <ListItem>
               {" "}
               2008-2012 Language High School Pitagora ,Croatia 2006- 2008
               Skalice Primary school, Croatia{" "}
             </ListItem>
-            <ListItem color="whiteAlpha.700">
-              2005- 2006 Goethe Comprehensive School, Dieburg
-            </ListItem>
-            <ListItem color="whiteAlpha.700">
+            <ListItem>2005- 2006 Goethe Comprehensive School, Dieburg</ListItem>
+            <ListItem>
               2000-2004 Ysenburg Primary School Hailer-Meerholz, Gelnhausen
             </ListItem>
             <Heading color="whiteAlpha.900" size="Xl">
@@ -49,6 +48,7 @@ const AboutMe = () => {
             </Heading>
             <ListItem>German, English, Croatian</ListItem>
           </UnorderedList>
+          <Lottie animationData={brush} />
         </VStack>
       </Stack>
       <Stack bg="linear-gradient(#A88BEB ,#F8CEEC)" p="70px" m="3rem">
@@ -74,14 +74,10 @@ const AboutMe = () => {
           <FaLocationArrow m="4px" />
           Schloßstr.128 12163 Berlin
         </Text>
+        <Box>
+          <Lottie animationData={developer} width="50%" height="50%" />
+        </Box>
       </Stack>
-      <Box>
-        <Lottie animationData={developer} />
-        <Image
-          src="https://lottiefiles.com/63487-programming-computer"
-          alt="animation"
-        />
-      </Box>
     </>
   );
 };
