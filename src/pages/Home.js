@@ -52,7 +52,7 @@ function Home() {
             I'm a future Mediadesigner / Webdesigner, having an Internship at
             epekworks.com.
             <span>
-              Im a Free Spirit,interested into Art, Music, learning new skills
+              Im a Free Spirit, interested into Art, Music, learning new skills
               and Technology.
             </span>
           </Text>{" "}
