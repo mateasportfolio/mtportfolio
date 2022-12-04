@@ -1,13 +1,20 @@
 import React from "react";
-import { Stack, Heading, VStack, Text } from "@chakra-ui/react";
+import { Box, useMediaQuery, VStack, Image } from "@chakra-ui/react";
+import { Stack, Heading, Text } from "@chakra-ui/react";
 import { ListItem, UnorderedList } from "@chakra-ui/react";
 import { PhoneIcon, EmailIcon } from "@chakra-ui/icons";
 import { FaLocationArrow } from "react-icons/fa";
+import Lottie from "lottie-react";
+import developer from "../assets/developer.json";
 
 const AboutMe = () => {
+  const [isNotSmallerScreen] = useMediaQuery("(min-width: 768px)");
   return (
     <>
-      <Stack>
+      <Stack with="100%">
+        <Box mt={isNotSmallerScreen ? "0" : 16} align="flex-start">
+          {" "}
+        </Box>
         <VStack bg="linear-gradient(#A88BEB ,#F8CEEC)" p="30px" m="3rem">
           <Heading color="whiteAlpha.700" size="xl">
             Education
@@ -68,6 +75,13 @@ const AboutMe = () => {
           Schloßstr.128 12163 Berlin
         </Text>
       </Stack>
+      <Box>
+        <Lottie animationData={developer} />
+        <Image
+          src="https://lottiefiles.com/63487-programming-computer"
+          alt="animation"
+        />
+      </Box>
     </>
   );
 };
