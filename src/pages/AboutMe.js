@@ -1,7 +1,8 @@
 import React from "react";
-import { Stack, Heading, VStack } from "@chakra-ui/react";
+import { Stack, Heading, VStack, Text } from "@chakra-ui/react";
 import { ListItem, UnorderedList } from "@chakra-ui/react";
-// import { CheckCircleIcon } from "@chakra-ui/icons";
+import { PhoneIcon, EmailIcon } from "@chakra-ui/icons";
+import { FaLocationArrow } from "react-icons/fa";
 
 const AboutMe = () => {
   return (
@@ -41,19 +42,31 @@ const AboutMe = () => {
             </Heading>
             <ListItem>German, English, Croatian</ListItem>
           </UnorderedList>
-          {/* <UnorderedList color="whiteAlpha.700">
-            <Heading size="Xl">
-                Language
-                </Heading>
-           
-            <Heading color="whiteAlpha.700" size="Xl">
-              Skills
-            </Heading>
-            {/* <UnorderedList color="whiteAlpha.700"> */}
-          {/* <ListItem>Html, Css, JavaScript, React.js</ListItem>
-            
-          </UnorderedList> */}{" "}
         </VStack>
+      </Stack>
+      <Stack bg="linear-gradient(#A88BEB ,#F8CEEC)" p="70px" m="3rem">
+        <Heading color="whiteAlpha.900" size="Xl">
+          Contact
+        </Heading>
+        <Text>
+          {" "}
+          <PhoneIcon m="4px" />
+          017659017116
+        </Text>
+        <Heading color="whiteAlpha.900" size="Xl">
+          Mail
+        </Heading>
+        <Text>
+          <EmailIcon m="4px" />
+          mateatabak@gmail.com
+        </Text>
+        <Heading color="whiteAlpha.900" size="Xl">
+          Adress
+        </Heading>
+        <Text>
+          <FaLocationArrow m="4px" />
+          Schloßstr.128 12163 Berlin
+        </Text>
       </Stack>
     </>
   );
