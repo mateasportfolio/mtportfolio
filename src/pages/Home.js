@@ -16,7 +16,7 @@ function Home() {
   const { colorMode } = useColorMode();
   const isDark = colorMode === "dark";
 
-  const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
+  const [isNotSmallerScreen] = useMediaQuery("(min-width: 800px)");
   return (
     <Stack>
       <Circle
@@ -26,12 +26,14 @@ function Home() {
         w="300px"
         h="300px"
         alignSelf="flex-end"
+        boxShadow="7.8px 15.7px 15.7px hsl(0deg 0% 0% / 0.26)"
       />
       <Flex
         direction={isNotSmallerScreen ? "row" : "column"}
         spacing="200px"
         p={isNotSmallerScreen ? "32" : "0"}
         alignSelf="flex-start"
+        minWidth="50%"
       >
         <Box mt={isNotSmallerScreen ? "0" : 16} align="flex-start">
           <Text fontSize="6xl" fontWeight="semibold">
