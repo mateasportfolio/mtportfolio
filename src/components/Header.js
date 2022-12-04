@@ -50,6 +50,9 @@ export const Header = ({ isDark, toggleColorMode }) => {
             <MenuItem>
               <Link to="/art">Art</Link>
             </MenuItem>
+            <MenuItem>
+              <Link to="/aboutme">About Me</Link>
+            </MenuItem>
           </MenuList>
         </Menu>
       </Heading>
