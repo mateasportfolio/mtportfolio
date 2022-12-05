@@ -1,9 +1,9 @@
 import React from "react";
-import { Box, useMediaQuery, VStack } from "@chakra-ui/react";
+import { Box, useMediaQuery, VStack, Icon } from "@chakra-ui/react";
 import { Stack, Heading, Text } from "@chakra-ui/react";
 import { ListItem, UnorderedList } from "@chakra-ui/react";
 import { PhoneIcon, EmailIcon } from "@chakra-ui/icons";
-import { FaLocationArrow } from "react-icons/fa";
+import { FaLocationArrow, FaReact, FaHtml5 } from "react-icons/fa";
 import Lottie from "lottie-react";
 import developer from "../assets/developer.json";
 import brush from "../assets/brush.json";
@@ -41,7 +41,28 @@ const AboutMe = () => {
             <Heading color="whiteAlpha.900" size="Xl">
               Skills
             </Heading>
-            <ListItem>Html, Css, JavaScript, React.js</ListItem>
+            <ListItem>
+              <Icon
+                as={FaReact}
+                w={8}
+                h={8}
+                color="blue.500"
+                direction="row"
+                display="flow"
+                // align="stretch"
+              />
+              <Icon
+                as={FaHtml5}
+                w={8}
+                h={8}
+                color="blue.500"
+                direction="column"
+                display="flow"
+                // align="stretch"
+              />
+              Html, Css, JavaScript,React.js{" "}
+            </ListItem>
+
             <ListItem>Illustrator, Photoshop, InDesign, XD</ListItem>
             <Heading color="whiteAlpha.900" size="Xl">
               Language
