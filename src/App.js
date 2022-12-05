@@ -17,10 +17,10 @@ function App() {
       <Header isDark={isDark} toggleColorMode={toggleColorMode} />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/aboutme" element={<AboutMe />} />
+        <Route path="/art" element={<Art />} />
         <Route path="/code" element={<Code />} />
         <Route path="/hosting" element={<Hosting />} />
-        <Route path="/art" element={<Art />} />
-        <Route path="/aboutme" element={<AboutMe />} />
       </Routes>
     </VStack>
   );
