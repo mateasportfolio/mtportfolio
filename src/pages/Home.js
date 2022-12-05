@@ -48,33 +48,13 @@ function Home() {
           </Text>
           <Text color={isDark ? "pink.200" : "pink.500"} p="4" fontSize="2xl">
             {" "}
-            I'm a future Mediadesigner / Webdesigner, having an Internship at
-            epekworks.com.
+            I'm a future Mediadesigner / Webdesigner
             <br />
             <span>
               Im a Free Spirit, interested into Art, Music, learning new skills
               and Technology.
             </span>
           </Text>{" "}
-          {/* <Button
-              ml={8}
-              p={6}
-              position="asbsolute"
-              colorScheme="pink"
-              onClick={() => window.open()}
-            >
-              Page
-            </Button>
-          </Box>
-          <Button
-            ml={8}
-            p={6}
-            position="asbsolute"
-            colorScheme="pink"
-            onClick={() => window.open()}
-          >
-            Hosting
-          </Button> */}
         </Box>
 
         <Image
