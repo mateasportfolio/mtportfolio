@@ -18,7 +18,6 @@ import {
   FaGithub,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
-//import { Route } from "react-router-dom";
 
 export const Header = ({ isDark, toggleColorMode }) => {
   const onClick = (href) => {
@@ -71,7 +70,7 @@ export const Header = ({ isDark, toggleColorMode }) => {
         color={isDark ? "whiteAlpha.1000" : "pink.200"}
         icon={<FaFreeCodeCamp />}
         isRound="true"
-        onClick={() => onClick("https://github.com/mateasportfolio")}
+        onClick={() => onClick("https://www.freecodecamp.org/matea")}
       ></IconButton>
       <IconButton
         ml={4}
