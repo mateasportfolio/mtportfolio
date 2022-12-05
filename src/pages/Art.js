@@ -1,8 +1,14 @@
 import React from "react";
-import { Image, Stack, Box, VStack, useMediaQuery } from "@chakra-ui/react";
+import {
+  Image,
+  Stack,
+  Box,
+  VStack,
+  useMediaQuery,
+  Text,
+} from "@chakra-ui/react";
 import klausur from "../assets/klausur.svg";
 import Schmuck from "../assets/Schmuck.svg";
-//import { Grid, GridItem } from "@chakra-ui/react";
 
 const Art = () => {
   const [isNotSmallerScreen] = useMediaQuery("(min-width: 600px)");
@@ -30,21 +36,13 @@ const Art = () => {
         p="6"
         rounded="md"
       />
+      <Box>
+        <Text as="b" fontSize="xl" color="pink.400">
+          {" "}
+          Made with Photoshop and Illustrator
+        </Text>
+      </Box>
 
-      {/* <Image
-        backgroundColor="pink.200"
-        bg="linear-gradient(#ffc0eb, #9198e5)"
-        opacity={1}
-        boxShadow="dark-lg"
-        w="40%"
-        m="20px"
-        pl="2"
-        pr="2"
-        pt="2"
-        position="relative"
-        shadow="outline"
-        src={Schmuck}
-      /> */}
       <VStack>
         <Box p="20px" m="50px">
           <Image
