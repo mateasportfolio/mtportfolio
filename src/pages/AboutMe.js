@@ -48,11 +48,17 @@ const AboutMe = () => {
             </Heading>
             <ListItem>German, Croatian, English</ListItem>
           </UnorderedList>
-          <Lottie animationData={brush} height={800} width={100} />
+          <Box>
+            <Lottie animationData={developer} width="50%" height="50%" />
+          </Box>
         </VStack>
       </Stack>
 
       <Stack bg="linear-gradient(#A88BEB ,#F8CEEC)" p="70px" m="3rem">
+        <Box>
+          {" "}
+          <Lottie animationData={brush} width="50%" height="50%" />
+        </Box>
         <Heading color="whiteAlpha.900" size="Xl">
           Contact
         </Heading>
@@ -75,9 +81,6 @@ const AboutMe = () => {
           <FaLocationArrow m="4px" />
           Schloßstr.128 12163 Berlin
         </Text>
-        <Box>
-          <Lottie animationData={developer} width="50%" height="50%" />
-        </Box>
       </Stack>
     </>
   );
