@@ -1,5 +1,12 @@
 import React from "react";
-import { Box, useMediaQuery, VStack, Icon, HStack } from "@chakra-ui/react";
+import {
+  Box,
+  useMediaQuery,
+  VStack,
+  Icon,
+  HStack,
+  Flex,
+} from "@chakra-ui/react";
 import { Stack, Heading, Text } from "@chakra-ui/react";
 import { ListItem, UnorderedList } from "@chakra-ui/react";
 import { PhoneIcon, EmailIcon } from "@chakra-ui/icons";
@@ -14,7 +21,7 @@ const AboutMe = () => {
   return (
     <>
       <>
-        <Stack with="100%">
+        <Stack with="100%" direction="column">
           <Box mt={isNotSmallerScreen ? "0" : 16} align="flex-start">
             {" "}
           </Box>
@@ -24,7 +31,8 @@ const AboutMe = () => {
             </Heading>
             <UnorderedList>
               <ListItem>
-                2022 - Internship Webdesign / Webdevelopment at epekworks
+                2022 - Internship Webdesign / Webdevelopment / Marketing at
+                epekworks
               </ListItem>
               <ListItem>
                 2021-Aktuell GPB Gesellschaft für Personalentwicklung und
@@ -101,14 +109,14 @@ const AboutMe = () => {
             <FaLocationArrow m="4px" />
             Schloßstr.128 12163 Berlin
           </Text>
-          <Box>
+          <Flex>
             <Lottie animationData={developer} width="50%" height="50%" />
-          </Box>
+          </Flex>
         </Stack>
       </>
-      <Stack bg="linear-gradient(#A88BEB ,#F8CEEC)" p="70px" m="3rem">
+      <Flex bg="linear-gradient(#A88BEB ,#F8CEEC)" p="70px" m="3rem">
         <Lottie animationData={brush} width="50%" height="50%" />
-      </Stack>
+      </Flex>
     </>
   );
 };

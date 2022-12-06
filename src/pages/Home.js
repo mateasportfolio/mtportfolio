@@ -15,7 +15,7 @@ function Home() {
   const { colorMode } = useColorMode();
   const isDark = colorMode === "dark";
 
-  const [isNotSmallerScreen] = useMediaQuery("(min-width: 800px)");
+  const [isNotSmallerScreen] = useMediaQuery("(min-width: 768px)");
   return (
     <Stack>
       <Circle
