@@ -21,8 +21,8 @@ const AboutMe = () => {
   return (
     <>
       <>
-        <Stack with="100%" direction="column">
-          <Box mt={isNotSmallerScreen ? "0" : 16} align="flex-start">
+        <Stack with="100%" direction="column" alignSelf="center">
+          <Box mt={isNotSmallerScreen ? "0" : 16} alignSelf="center">
             {" "}
           </Box>
           <VStack bg="linear-gradient(#A88BEB ,#F8CEEC)" p="30px" m="3rem">
@@ -86,7 +86,12 @@ const AboutMe = () => {
           </VStack>
         </Stack>
 
-        <Stack bg="linear-gradient(#A88BEB ,#F8CEEC)" p="70px" m="3rem">
+        <Stack
+          bg="linear-gradient(#A88BEB ,#F8CEEC)"
+          p="70px"
+          m="3rem"
+          alignSelf="center"
+        >
           <Heading color="whiteAlpha.900" size="Xl">
             Contact
           </Heading>
@@ -114,8 +119,13 @@ const AboutMe = () => {
           </Flex>
         </Stack>
       </>
-      <Flex bg="linear-gradient(#A88BEB ,#F8CEEC)" p="70px" m="3rem">
-        <Lottie animationData={brush} width="50%" height="50%" />
+      <Flex
+        bg="linear-gradient(#A88BEB ,#F8CEEC)"
+        p="70px"
+        m="3rem"
+        alignSelf="center"
+      >
+        <Lottie animationData={brush} maxWidth="100px" />
       </Flex>
     </>
   );
