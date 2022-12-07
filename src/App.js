@@ -1,5 +1,5 @@
 import "./styles.css";
-import { VStack, useMediaQuery, useColorMode } from "@chakra-ui/react"; //
+import { VStack, useMediaQuery, useColorMode } from "@chakra-ui/react";
 import { Route, Routes } from "react-router-dom";
 import { Header } from "./components/Header";
 import Home from "./pages/Home";
@@ -8,8 +8,7 @@ import Hosting from "./pages/Hosting";
 import Art from "./pages/Art";
 import AboutMe from "./pages/AboutMe";
 
-function App() {
-  // const App = () => {
+const App = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   const isDark = colorMode === "dark";
   const [isNotSmallerScreen] = useMediaQuery("(min-width: 768px)");
@@ -28,5 +27,5 @@ function App() {
       </VStack>
     </>
   );
-}
+};
 export default App;

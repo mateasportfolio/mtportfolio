@@ -1,4 +1,5 @@
 import React from "react";
+import cvijet from "../assets/cvijet.json";
 import {
   Text,
   Stack,
@@ -8,6 +9,7 @@ import {
   Box,
   Heading,
 } from "@chakra-ui/react";
+import Lottie from "lottie-react";
 
 const AboutMe = () => {
   const [isNotSmallerScreen] = useMediaQuery("(min-width: 768px)");
@@ -19,54 +21,114 @@ const AboutMe = () => {
       p="20px"
       m="10px"
       justifyContent="center"
-      justifySelf="baseline"
+      justifySelf="flex-end"
     >
       <Flex
         mt={isNotSmallerScreen ? "0" : 16}
         alignSelf="center"
         justifySelf="center"
+        pt="30px"
       >
         {" "}
       </Flex>
 
       <Stack spacing={3}>
-        <Text noOfLines={[1, 2, 3]} fontSize="4xl">
+        <Text
+          noOfLines={[1, 2, 3]}
+          fontSize="4xl"
+          pt="30px"
+          alignSelf="center"
+          fontFamily="body"
+          fontWeight="light"
+        >
           {" "}
           Education
         </Text>
-        <Text noOfLines={[1, 2, 3]} fontSize="2xl">
+        <Text
+          noOfLines={[1, 2, 3]}
+          fontSize="2xl"
+          fontFamily="body"
+          fontWeight="light"
+        >
           2022 - Internship Webdesign / Webdevelopment / Marketing at epekworks
         </Text>
-        <Text noOfLines={[1, 2, 3]} fontSize="2xl">
+        <Text
+          noOfLines={[1, 2, 3]}
+          fontSize="2xl"
+          fontFamily="body"
+          fontWeight="light"
+        >
           2021-Aktuell GPB Gesellschaft für Personalentwicklung und Bildung mbh
           ( Apprentice as a Media designer - Digital und Print, Schwerpunkt Web)
         </Text>
-        <Text noOfLines={[1, 2, 3]} fontSize="2xl">
+        <Text
+          noOfLines={[1, 2, 3]}
+          fontSize="2xl"
+          fontFamily="body"
+          fontWeight="light"
+        >
           2008-2012 Language High School Pitagora ,Croatia 2006- 2008 Skalice
           Primary school, Croatia
         </Text>
-        <Text noOfLines={[1, 2, 3]} fontSize="2xl">
+        <Text
+          noOfLines={[1, 2, 3]}
+          fontSize="2xl"
+          fontFamily="body"
+          fontWeight="light"
+        >
           2005-2006 Goethe Comprehensive School, Dieburg
         </Text>
-        <Text noOfLines={[1, 2, 3]} fontSize="2xl">
+        <Text
+          noOfLines={[1, 2, 3]}
+          fontSize="2xl"
+          fontFamily="body"
+          fontWeight="light"
+        >
           2000-2004 Ysenburg Primary School Hailer-Meerholz, Gelnhausen
         </Text>
         <br />
 
-        <Text noOfLines={[1, 2, 3]} fontSize="4xl">
+        <Text
+          noOfLines={[1, 2, 3]}
+          fontSize="4xl"
+          fontFamily="body"
+          alignSelf="center"
+          fontWeight="light"
+        >
           Skills
         </Text>
-        <Text noOfLines={[1, 2, 3]} fontSize="1xl">
+        <Text
+          noOfLines={[1, 2, 3]}
+          fontSize="1xl"
+          fontFamily="body"
+          fontWeight="light"
+        >
           Html, Css, JavaScript,React.js
         </Text>
-        <Text noOfLines={[1, 2, 3]} fontSize="1xl">
+        <Text
+          noOfLines={[1, 2, 3]}
+          fontSize="1xl"
+          fontWeight="light"
+          fontFamily="body"
+        >
           Illustrator, Photoshop, InDesign, XD
         </Text>
         <br />
-        <Text noOfLines={[1, 2, 3]} fontSize="4xl">
+        <Text
+          noOfLines={[1, 2, 3]}
+          fontSize="4xl"
+          fontFamily="body"
+          alignSelf="center"
+          fontWeight="light"
+        >
           Language
         </Text>
-        <Text noOfLines={[1, 2, 3]} fontSize="2xl">
+        <Text
+          noOfLines={[1, 2, 3]}
+          fontSize="2xl"
+          fontFamily="body"
+          fontWeight="light"
+        >
           German, Croatian, English and trying to learn Italian
         </Text>
         <br />
@@ -74,47 +136,71 @@ const AboutMe = () => {
           display="flex"
           border="2px solid red"
           justifyContent="center"
-          pb="20px"
+          pb="150px"
           color="blueviolet"
         >
           <Stack
             spacing={6}
-            color="blueviolet"
-            borderRadius="3px"
+            color="lightpink"
+            borderRadius="2px"
             borderColor="lightpink"
           >
             <br />
-            <Heading size="xl" pt="30px" alignSelf="center">
+            <Heading size="xl" pt="15px" alignSelf="center">
               Contact
             </Heading>
+            <Flex
+              display="flex"
+              alignSelf="left"
+              justifyItems="left"
+              alignContent="revert"
+            >
+              <Lottie
+                animationData={cvijet}
+                objectFit="cover"
+                onDurationChange={2}
+              />
+              <Lottie
+                animationData={cvijet}
+                objectFit="cover"
+                onDurationChange={2}
+              />
+            </Flex>
             <Input
-              borderRadius="3px"
-              color="blueviolet"
+              position="relative"
+              alignItems="center"
+              justifyContent="center"
+              borderRadius="2px"
+              color="lightrosa"
               placeholder="017659017116"
-              size="sm"
+              size="lg"
               type="number"
               fontWeight={600}
               as="input"
             />
             <Input
-              borderRadius="3px"
+              position="relative"
+              alignItems="center"
+              justifyContent="center"
+              borderRadius="2px"
+              color="lightrosa"
               placeholder="mateatabak@gmail.com"
-              size="sm"
-              type="email"
+              size="lg"
+              type="number"
               fontWeight={600}
               as="input"
-              color="blueviolet"
-            />
-
+            />{" "}
             <Input
-              borderRadius="3px"
-              placeholder="Schloßstr.128,12163 "
-              size="sm"
-              type="text"
+              position="relative"
+              alignItems="center"
+              justifyContent="center"
+              borderRadius="2px"
+              color="lightrosa"
+              size="lg"
+              type="number"
               fontWeight={600}
               as="input"
-              color="blueviolet"
-              borderColor="lightpink"
+              placeholder="Schloßstr.128,12163"
             />
           </Stack>
         </Box>

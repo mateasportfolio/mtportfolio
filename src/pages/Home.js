@@ -34,11 +34,7 @@ function Home() {
         alignSelf="flex-start"
         minWidth="50%"
       >
-        <Box
-          mt={isNotSmallerScreen ? "0" : 16}
-          align="flex-start"
-          //border="1px solid beige"
-        >
+        <Box mt={isNotSmallerScreen ? "0" : 16} align="flex-start">
           <Text fontSize="6xl" fontWeight="semibold">
             Hi, I am
           </Text>
