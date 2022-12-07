@@ -8,6 +8,8 @@ import {
   Input,
   Box,
   Heading,
+  ListItem,
+  UnorderedList,
 } from "@chakra-ui/react";
 import Lottie from "lottie-react";
 
@@ -32,7 +34,13 @@ const AboutMe = () => {
         {" "}
       </Flex>
 
-      <Stack spacing={3} border="1px solid lightpink" m="10px" p="20px">
+      <Stack
+        spacing={3}
+        border="1px solid lightpink"
+        m="10px"
+        p="20px"
+        bg="#673ab7"
+      >
         <Text
           noOfLines={[1, 2, 3]}
           fontSize="4xl"
@@ -44,48 +52,63 @@ const AboutMe = () => {
           {" "}
           Education
         </Text>
-        <Text
-          noOfLines={[1, 2, 3]}
-          fontSize="2xl"
-          fontFamily="body"
-          fontWeight="light"
-        >
-          2022 - Internship Webdesign / Webdevelopment / Marketing at epekworks
-        </Text>
-        <Text
-          noOfLines={[1, 2, 3]}
-          fontSize="2xl"
-          fontFamily="body"
-          fontWeight="light"
-        >
-          2021-Aktuell GPB Gesellschaft für Personalentwicklung und Bildung mbh
-          ( Apprentice as a Media designer - Digital und Print, Schwerpunkt Web)
-        </Text>
-        <Text
-          noOfLines={[1, 2, 3]}
-          fontSize="2xl"
-          fontFamily="body"
-          fontWeight="light"
-        >
-          2008-2012 Language High School Pitagora ,Croatia 2006- 2008 Skalice
-          Primary school, Croatia
-        </Text>
-        <Text
-          noOfLines={[1, 2, 3]}
-          fontSize="2xl"
-          fontFamily="body"
-          fontWeight="light"
-        >
-          2005-2006 Goethe Comprehensive School, Dieburg
-        </Text>
-        <Text
-          noOfLines={[1, 2, 3]}
-          fontSize="2xl"
-          fontFamily="body"
-          fontWeight="light"
-        >
-          2000-2004 Ysenburg Primary School Hailer-Meerholz, Gelnhausen
-        </Text>
+        <UnorderedList>
+          <ListItem>
+            <Text
+              noOfLines={[1, 2, 3]}
+              fontSize="2xl"
+              fontFamily="body"
+              fontWeight="light"
+            >
+              2022 - Internship Webdesign / Webdevelopment / Marketing at
+              epekworks
+            </Text>
+            <ListItem>
+              <Text
+                noOfLines={[1, 2, 3]}
+                fontSize="2xl"
+                fontFamily="body"
+                fontWeight="light"
+              >
+                2021-Aktuell GPB Gesellschaft für Personalentwicklung und
+                Bildung mbh ( Apprentice as a Media designer - Digital und
+                Print, Schwerpunkt Web)
+              </Text>
+              <ListItem>
+                <Text
+                  noOfLines={[1, 2, 3]}
+                  fontSize="2xl"
+                  fontFamily="body"
+                  fontWeight="light"
+                >
+                  2008-2012 Language High School Pitagora ,Croatia 2006- 2008
+                  Skalice Primary school, Croatia
+                </Text>
+              </ListItem>
+            </ListItem>
+            <ListItem>
+              <Text
+                noOfLines={[1, 2, 3]}
+                fontSize="2xl"
+                fontFamily="body"
+                fontWeight="light"
+              >
+                2005-2006 Goethe Comprehensive School, Dieburg
+              </Text>
+            </ListItem>
+            <ListItem>
+              <Text
+                noOfLines={[1, 2, 3]}
+                fontSize="2xl"
+                fontFamily="body"
+                fontWeight="light"
+              >
+                2000-2004 Ysenburg Primary School Hailer-Meerholz, Gelnhausen
+              </Text>
+            </ListItem>
+          </ListItem>
+        </UnorderedList>
+
         <br />
 
         <Text
@@ -97,41 +120,51 @@ const AboutMe = () => {
         >
           Skills
         </Text>
-        <Text
-          noOfLines={[1, 2, 3]}
-          fontSize="1xl"
-          fontFamily="body"
-          fontWeight="light"
-        >
-          Html, Css, JavaScript,React.js
-        </Text>
-        <Text
-          noOfLines={[1, 2, 3]}
-          fontSize="1xl"
-          fontWeight="light"
-          fontFamily="body"
-        >
-          Illustrator, Photoshop, InDesign, XD
-        </Text>
-        <br />
-        <Text
-          noOfLines={[1, 2, 3]}
-          fontSize="4xl"
-          fontFamily="body"
-          alignSelf="center"
-          fontWeight="light"
-        >
-          Language
-        </Text>
-        <Text
-          noOfLines={[1, 2, 3]}
-          fontSize="2xl"
-          fontFamily="body"
-          fontWeight="light"
-        >
-          German, Croatian, English and trying to learn Italian
-        </Text>
-        <br />
+        <UnorderedList>
+          <ListItem>
+            <Text
+              noOfLines={[1, 2, 3]}
+              fontSize="1xl"
+              fontFamily="body"
+              fontWeight="light"
+            >
+              Html, Css, JavaScript,React.js
+            </Text>
+          </ListItem>
+          <ListItem>
+            <Text
+              noOfLines={[1, 2, 3]}
+              fontSize="1xl"
+              fontWeight="light"
+              fontFamily="body"
+            >
+              Illustrator, Photoshop, InDesign, XD
+            </Text>
+          </ListItem>
+          <br />
+          <ListItem>
+            <Text
+              noOfLines={[1, 2, 3]}
+              fontSize="4xl"
+              fontFamily="body"
+              alignSelf="center"
+              fontWeight="light"
+            >
+              Language
+            </Text>
+          </ListItem>
+          <ListItem>
+            <Text
+              noOfLines={[1, 2, 3]}
+              fontSize="2xl"
+              fontFamily="body"
+              fontWeight="light"
+            >
+              German, Croatian, English and trying to learn Italian
+            </Text>
+            <br />
+          </ListItem>
+        </UnorderedList>
         <Box
           display="flex"
           border="1px solid lightpink"
@@ -159,7 +192,7 @@ const AboutMe = () => {
               <Lottie
                 animationData={cvijet}
                 objectFit="cover"
-                onDurationChange={2}
+                onDurationChange={6}
               />
               <Lottie
                 animationData={cvijet}
@@ -172,6 +205,7 @@ const AboutMe = () => {
               alignItems="center"
               justifyContent="center"
               borderRadius="2px"
+              boxShadow="outline"
               color="lightrosa"
               placeholder="017659017116"
               size="lg"
@@ -179,15 +213,17 @@ const AboutMe = () => {
               fontWeight={600}
               as="input"
             />
+            Mobil
             <Input
               position="relative"
               alignItems="center"
               justifyContent="center"
               borderRadius="2px"
+              boxShadow="outline"
               color="lightrosa"
               placeholder="mateatabak@gmail.com"
               size="lg"
-              type="number"
+              type="email"
               fontWeight={600}
               as="input"
             />{" "}
@@ -196,12 +232,13 @@ const AboutMe = () => {
               alignItems="center"
               justifyContent="center"
               borderRadius="2px"
+              boxShadow="outline"
               color="lightrosa"
               size="lg"
-              type="number"
+              type="adress"
               fontWeight={600}
               as="input"
-              placeholder="Schloßstr.128,12163"
+              placeholder="Schloßstr.128 12163"
             />
           </Stack>
         </Box>

@@ -10,6 +10,8 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import xsxsa from "../assets/xsxsa.png";
+import Lottie from "lottie-react";
+import spinner from "./../assets/spinner.json";
 
 function Home() {
   const { colorMode } = useColorMode();
@@ -67,6 +69,21 @@ function Home() {
           boxShadow="lg"
           boxSize="300px"
           src={xsxsa}
+        />
+        {/* <Image
+         
+          
+          boxSize="300px"
+        /> */}
+        <Lottie
+          animationData={spinner}
+          objectFit="cover"
+          onDurationChange={6}
+          boxShadow="lg"
+          opacity="white "
+          maxWidth={{ base: "100vh", md: "130vh", lg: "130vh", xl: "130vh" }}
+          borderRadius="full"
+          backgroundColor="transparent"
         />
       </Flex>
     </Stack>

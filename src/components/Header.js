@@ -3,7 +3,6 @@ import {
   Flex,
   Heading,
   IconButton,
-  Spacer,
   Button,
   Menu,
   MenuButton,
@@ -56,7 +55,6 @@ export const Header = ({ isDark, toggleColorMode }) => {
         </Menu>
       </Heading>
 
-      <Spacer></Spacer>
       <IconButton
         ml={4}
         color={isDark ? "whiteAlpha.1000" : "pink.200"}
