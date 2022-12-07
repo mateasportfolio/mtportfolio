@@ -32,7 +32,7 @@ const AboutMe = () => {
         {" "}
       </Flex>
 
-      <Stack spacing={3}>
+      <Stack spacing={3} border="1px solid lightpink" m="10px" p="20px">
         <Text
           noOfLines={[1, 2, 3]}
           fontSize="4xl"
@@ -134,16 +134,17 @@ const AboutMe = () => {
         <br />
         <Box
           display="flex"
-          border="2px solid red"
+          border="1px solid lightpink"
           justifyContent="center"
           pb="150px"
-          color="blueviolet"
+          color="white"
         >
           <Stack
             spacing={6}
             color="lightpink"
             borderRadius="2px"
             borderColor="lightpink"
+            p="20px"
           >
             <br />
             <Heading size="xl" pt="15px" alignSelf="center">
