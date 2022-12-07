@@ -3,12 +3,8 @@ import { Box, useMediaQuery, VStack, Icon } from "@chakra-ui/react";
 import { Input } from "@chakra-ui/react";
 import { Stack, Heading } from "@chakra-ui/react";
 import { ListItem, UnorderedList } from "@chakra-ui/react";
-// import { PhoneIcon, EmailIcon, Search2Icon } from "@chakra-ui/icons";
+
 import { FaReact, FaHtml5 } from "react-icons/fa";
-// import Lottie from "lottie-react";
-// import developer from "../assets/developer.json";
-// import brush from "../assets/brush.json";
-// import painter from "./../assets/painter.json";
 
 const AboutMe = () => {
   const [isNotSmallerScreen] = useMediaQuery("(min-width: 768px)");
@@ -74,12 +70,8 @@ const AboutMe = () => {
           </Heading>
           <ListItem>German, Croatian, English</ListItem>
         </UnorderedList>
-
-        {/* <HStack>
-              <Lottie animationData={painter} width="50%" height="50%" />
-            </HStack> */}
       </VStack>
-      {/* </Stack>  */}
+
       <Box
         display="flex"
         border="2px solid red"
@@ -127,7 +119,6 @@ const AboutMe = () => {
           />
         </Stack>
       </Box>
-      {/* <Lottie animationData={brush} maxWidth="100px" /> */}
     </Stack>
   );
 };

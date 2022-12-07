@@ -50,12 +50,7 @@ function Home() {
           >
             Matea
           </Text>
-          <Text
-            color={isDark ? "pink.200" : "pink.500"}
-            p="4"
-            fontSize="2xl"
-            // border="1px solid beige"
-          >
+          <Text color={isDark ? "pink.200" : "pink.500"} p="4" fontSize="2xl">
             {" "}
             I'm a future Mediadesigner / Webdesigner
             <br />
