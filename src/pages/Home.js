@@ -34,7 +34,11 @@ function Home() {
         alignSelf="flex-start"
         minWidth="50%"
       >
-        <Box mt={isNotSmallerScreen ? "0" : 16} align="flex-start">
+        <Box
+          mt={isNotSmallerScreen ? "0" : 16}
+          align="flex-start"
+          //border="1px solid beige"
+        >
           <Text fontSize="6xl" fontWeight="semibold">
             Hi, I am
           </Text>
@@ -46,7 +50,12 @@ function Home() {
           >
             Matea
           </Text>
-          <Text color={isDark ? "pink.200" : "pink.500"} p="4" fontSize="2xl">
+          <Text
+            color={isDark ? "pink.200" : "pink.500"}
+            p="4"
+            fontSize="2xl"
+            // border="1px solid beige"
+          >
             {" "}
             I'm a future Mediadesigner / Webdesigner
             <br />
