@@ -34,8 +34,9 @@ export const Header = ({ isDark, toggleColorMode }) => {
         flexDirection="row"
         display="flex"
       >
-        <Menu color="pink.200">
+        <Menu colorScheme="pink">
           <MenuButton
+            colorScheme="yellow.100"
             as={Button}
             p={4}
             bgGradient="linear(to-r, purple.400, cyan.500, blue.600)"
