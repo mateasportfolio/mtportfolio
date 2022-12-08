@@ -59,13 +59,13 @@ function Home() {
               fontSize="2xl"
               fontWeight="hairline"
             >
-              {" "}
               I'm a future Mediadesigner / Webdesigner
               <span>
-                Im a Free Spirit, interested into Art, Music, learning new
+                <br />
+                I'm a Free Spirit, interested into Art, Music, learning new
                 skills and Technology.
               </span>
-            </Text>{" "}
+            </Text>
           </Box>
 
           <Image
