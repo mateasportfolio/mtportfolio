@@ -18,11 +18,11 @@ const AboutMe = () => {
   return (
     <Flex
       with="100%"
-      direction="column"
+      direction="row"
       alignSelf="center"
-      p="20px"
-      m="10px"
-      justifyContent="center"
+      p="2px"
+      ml="10px"
+      justifyContent="flex-start"
       justifySelf="flex-end"
     >
       <Flex
@@ -35,16 +35,16 @@ const AboutMe = () => {
       </Flex>
 
       <Stack
-        spacing={3}
+        spacing={6}
         border="1px solid lightpink"
-        m="10px"
+        marginTop={10}
         p="20px"
         bg="#673ab7"
       >
         <Text
           noOfLines={[1, 2, 3]}
           fontSize="4xl"
-          pt="30px"
+          pt={30}
           alignSelf="center"
           fontFamily="body"
           fontWeight="light"

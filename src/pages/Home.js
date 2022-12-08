@@ -19,29 +19,31 @@ function Home() {
 
   const [isNotSmallerScreen] = useMediaQuery("(min-width: 768px)");
   return (
-    <Stack flexDirection="column" alignContent="stretch">
+    <Stack flexDirection="row" alignContent="stretch" p={20}>
       <Circle
+        flexDirection="row"
         position="fixed"
         bg="#ff009c"
-        opacity="0.05"
-        onDurationChange="5s"
+        opacity="0.02"
+        onDurationChange={8}
         w="300px"
         h="300px"
-        alignSelf="baseline"
+        alignSelf="stretch"
         boxShadow="7.8px 15.7px 15.7px hsl(0deg 0% 0% / 0.26)"
       />
-      <Flex display="flex" alignContent="stretch" flexWrap="nowrap">
+      <Flex display="flex" alignContent="stretch" flexDirection="row">
         <Flex
           direction={isNotSmallerScreen ? "row" : "column"}
           spacing="200px"
           p={isNotSmallerScreen ? "32" : "0"}
           minWidth="50%"
-          align="flex-start"
           alignContent="stretch"
+          textAlign="-moz-initial"
         >
-          <Box mt={isNotSmallerScreen ? "0" : 16} float="left">
-            <Text fontSize="5xl" f fontWeight="hairline">
-              Hi, I am
+          <Box mt={isNotSmallerScreen ? "0" : 16}>
+            <Text fontSize="6xl" f fontWeight="hairline">
+              Hi, I'm
+              <br />
             </Text>
             <Text
               fontSize="7xl"
@@ -52,14 +54,13 @@ function Home() {
               Matea
             </Text>
             <Text
-              color={isDark ? "pink.200" : "pink.500"}
+              color={isDark ? "pink.200" : "purple.500"}
               p="4"
               fontSize="2xl"
               fontWeight="hairline"
             >
               {" "}
               I'm a future Mediadesigner / Webdesigner
-              <br />
               <span>
                 Im a Free Spirit, interested into Art, Music, learning new
                 skills and Technology.
@@ -68,29 +69,40 @@ function Home() {
           </Box>
 
           <Image
-            alignSelf="inherit"
+            alignSelf="self-start"
             mt={isNotSmallerScreen ? "0" : "12"}
             mb={isNotSmallerScreen ? "0" : "12"}
             maxWidth={{ base: "100vh", md: "130vh", lg: "130vh", xl: "130vh" }}
             borderRadius="full"
             backgroundColor="transparent"
             boxShadow="lg"
+            bg="#a26dff"
             boxSize="350px"
             src={xsxsa}
           />
-
+          <Circle
+            flexDirection="column"
+            position="relative"
+            bg="#a26dff"
+            opacity="0.04"
+            onDurationChange="0.8s"
+            w="300px"
+            h="300px"
+            alignSelf="row"
+            boxShadow="7.8px 15.7px 15.7px  hsl(262deg 94% 79%)"
+          />
           <Lottie
-            p="0px"
-            m="auto"
             animationData={spinner}
             objectFit="cover"
-            onDurationChange="6s"
+            onDurationChange={8}
             boxShadow="xl"
             opacity="0.5"
+            size="xl"
             maxWidth={{ base: "100vh", md: "130vh", lg: "130vh", xl: "130vh" }}
             borderRadius="full"
-            backgroundColor="white.100"
+            backgroundColor="white.200"
             alignContent="stretch"
+            justifyContent="space-between"
           />
         </Flex>
       </Flex>

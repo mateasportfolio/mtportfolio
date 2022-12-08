@@ -24,17 +24,26 @@ export const Header = ({ isDark, toggleColorMode }) => {
   };
 
   return (
-    <Flex w="50%" alignContent="stretch" display="flex">
+    <Flex
+      w="50%"
+      alignContent="stretch"
+      display="flex"
+      ml="10px"
+      size="md"
+      fontWeight="semibold"
+      color="purple.400"
+      flexDirection="row"
+    >
       <Heading
-        ml="10"
+        ml="10px"
         size="md"
         fontWeight="semibold"
         color="purple.400"
-        alignContent="space-between"
+        alignContent="space-stretch"
         flexDirection="row"
         display="flex"
       >
-        <Menu colorScheme="pink">
+        <Menu colorScheme="pink" size="2xl">
           <MenuButton
             colorScheme="yellow.100"
             as={Button}
@@ -94,13 +103,14 @@ export const Header = ({ isDark, toggleColorMode }) => {
       ></IconButton>
 
       <IconButton
-        variant="#ffc0eb"
+        outline="#a26dff"
         ml={8}
         color={isDark ? "whiteAlpha.1000" : "pink.200"}
         icon={isDark ? <FaSun /> : <FaMoon />}
         isRound="true"
         onClick={toggleColorMode}
         alignContent="stretch"
+        flexDirection="row"
       ></IconButton>
     </Flex>
   );
