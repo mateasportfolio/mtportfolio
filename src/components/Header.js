@@ -25,23 +25,22 @@ export const Header = ({ isDark, toggleColorMode }) => {
 
   return (
     <Flex
-      w="50%"
-      alignContent="stretch"
-      display="flex"
-      ml="10px"
+      w="50vh"
+      alignContent="space-between"
+      marginLeft="auto"
+      display="inline-flex"
       size="md"
       fontWeight="semibold"
       color="purple.400"
-      flexDirection="row"
     >
       <Heading
         ml="10px"
         size="md"
         fontWeight="semibold"
         color="purple.400"
-        alignContent="space-stretch"
+        alignContent="stretch"
         flexDirection="row"
-        display="flex"
+        justifyContent="flex-end"
       >
         <Menu colorScheme="pink" size="2xl">
           <MenuButton

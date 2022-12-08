@@ -29,7 +29,7 @@ const AboutMe = () => {
         mt={isNotSmallerScreen ? "0" : 16}
         alignSelf="center"
         justifySelf="center"
-        pt="30px"
+        pt={30}
       >
         {" "}
       </Flex>
@@ -38,7 +38,7 @@ const AboutMe = () => {
         spacing={6}
         border="1px solid lightpink"
         marginTop={10}
-        p="20px"
+        p={20}
         bg="#673ab7"
       >
         <Text
