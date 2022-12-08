@@ -115,7 +115,6 @@ const AboutMe = () => {
           noOfLines={[1, 2, 3]}
           fontSize="4xl"
           fontFamily="body"
-          alignSelf="center"
           fontWeight="light"
         >
           Skills
@@ -180,7 +179,7 @@ const AboutMe = () => {
             p="20px"
           >
             <br />
-            <Heading size="xl" pt="15px" alignSelf="center">
+            <Heading size="4xl" pt="15px" alignSelf="center">
               Contact
             </Heading>
             <Flex
@@ -193,6 +192,7 @@ const AboutMe = () => {
                 animationData={cvijet}
                 objectFit="cover"
                 onDurationChange={6}
+                rotate=" 1 1 0 60deg"
               />
               <Lottie
                 animationData={cvijet}
@@ -238,7 +238,7 @@ const AboutMe = () => {
               type="adress"
               fontWeight={600}
               as="input"
-              placeholder="Schloßstr.128 12163"
+              placeholder="Schloßstr.128  12163"
             />
           </Stack>
         </Box>

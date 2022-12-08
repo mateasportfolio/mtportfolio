@@ -33,8 +33,9 @@ function Home() {
         direction={isNotSmallerScreen ? "row" : "column"}
         spacing="200px"
         p={isNotSmallerScreen ? "32" : "0"}
-        alignSelf="flex-start"
-        minWidth="50%"
+        minWidth="70%"
+        align="flex-start"
+        alignContent="stretch"
       >
         <Box mt={isNotSmallerScreen ? "0" : 16} align="flex-start">
           <Text fontSize="6xl" fontWeight="semibold">
@@ -60,30 +61,28 @@ function Home() {
         </Box>
 
         <Image
-          alignSelf="center"
+          alignSelf="inherit"
           mt={isNotSmallerScreen ? "0" : "12"}
           mb={isNotSmallerScreen ? "0" : "12"}
           maxWidth={{ base: "100vh", md: "130vh", lg: "130vh", xl: "130vh" }}
           borderRadius="full"
           backgroundColor="transparent"
           boxShadow="lg"
-          boxSize="300px"
+          boxSize="350px"
           src={xsxsa}
         />
-        {/* <Image
-         
-          
-          boxSize="300px"
-        /> */}
+
         <Lottie
+          p={3}
           animationData={spinner}
           objectFit="cover"
           onDurationChange={6}
           boxShadow="lg"
-          opacity="white "
+          opacity="0.5"
           maxWidth={{ base: "100vh", md: "130vh", lg: "130vh", xl: "130vh" }}
           borderRadius="full"
-          backgroundColor="transparent"
+          backgroundColor="white.100"
+          alignSelf="flex-start"
         />
       </Flex>
     </Stack>
