@@ -42,7 +42,11 @@ function Home() {
         >
           <Box mt={isNotSmallerScreen ? "0" : 16}>
             <Text fontSize="6xl" f fontWeight="hairline">
-              Hi, I'm
+              Hi,
+              <br />
+            </Text>
+            <Text fontSize="5xl" f fontWeight="hairline">
+              I'm
               <br />
             </Text>
             <Text
