@@ -25,7 +25,7 @@ export const Header = ({ isDark, toggleColorMode }) => {
 
   return (
     <Flex
-      w="50vh"
+      w="50"
       alignContent="space-between"
       marginLeft="auto"
       display="inline-flex"

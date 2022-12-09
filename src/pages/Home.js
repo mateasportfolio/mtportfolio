@@ -1,12 +1,13 @@
 import {
   Circle,
-  VStack,
   useColorMode,
   useMediaQuery,
   Flex,
-  Box,
   Text,
   Image,
+  Stack,
+  Heading,
+  HStack,
 } from "@chakra-ui/react";
 import React from "react";
 import xsxsa from "../assets/xsxsa.png";
@@ -19,41 +20,41 @@ function Home() {
 
   const [isNotSmallerScreen] = useMediaQuery("(min-width: 768px)");
   return (
-    <VStack
-      flexDirection="row-reverse"
+    <Stack
       display="flex"
-      alignItems="flex-start"
-      justifyItems="stretch"
-      m="10px"
-      p="10px"
+      flexDirection="row"
+      alignItems="flex-end"
+      alignContent="flex-end"
+      justifyContent="space-around"
+      position="relative"
+      flexWrap="wrap"
     >
-      <Circle
-        position="fixed"
-        bg="#ff009c"
-        opacity="0.02"
-        onDurationChange={8}
-        w="30px"
-        h="30px"
-        alignSelf="stretch"
-        boxShadow="7.8px 15.7px 15.7px hsl(0deg 0% 0% / 0.26)"
-      />
-      <Flex
-        direction={isNotSmallerScreen ? "row" : "column"}
-        spacing="200px"
-        p={isNotSmallerScreen ? "32" : "0"}
-        minWidth="100c"
-        m="1px"
-        alignContent="stretch"
-        textAlign="-moz-initial"
-      >
-        <Box mt={isNotSmallerScreen ? "0" : 16}>
-          <Text fontSize="6xl" fontWeight="hairline">
-            <span> Hi,</span>
-          </Text>
-          <Text fontSize="5xl" fontWeight="hairline">
-            <span> I'm</span>
-          </Text>
+      <Stack>
+        {" "}
+        <Circle
+          bgColor="pink.700"
+          opacity="0.5"
+          transitionDuration={4}
+          boxShadow="7.8px 15.7px 15.7px hsl(0deg 0% 0% / 0.26)"
+        />
+      </Stack>
+      <Flex direction="row-reverse">
+        <Heading
+          flexDirection="row"
+          textAlign="revert"
+          m="25px"
+          fontSize="5xl"
+          fontWeight="hairline"
+          pt="3px"
+          p="20px"
+          alignSelf="center"
+          fontFamily="body"
+        >
+          Hello,
+          <br />
+          <span> I'm</span>
           <Text
+            textAlign="start"
             fontSize="7xl"
             fontWeight="hairline"
             bgGradient="linear(to-r, purple.400, cyan.500, blue.600)"
@@ -62,60 +63,61 @@ function Home() {
             Matea
           </Text>
           <Text
+            flexDirection="row"
+            textAlign="start"
             color={isDark ? "pink.200" : "purple.500"}
-            p="4px"
             fontSize="2xl"
             fontWeight="hairline"
           >
-            I'm a future Mediadesigner / Webdesigner
             <span>
-              <br />
-              I'm a Free Spirit, exploring Art, Music, and Technology.
+              I'm a future Mediadesigner / Webdesigner <br />
+              <span>
+                I'm a Free Spirit, exploring Art, Music, and Technology.
+              </span>
             </span>
           </Text>
-        </Box>
+        </Heading>
+      </Flex>
 
+      <Flex
+        padding={16}
+        margin={120}
+        display="flex"
+        flexDirection="row"
+        alignItems="flex-end"
+        alignContent="flex-end"
+        justifyContent="space-around"
+        justifySelf="left"
+        position="relative"
+        flexWrap="wrap"
+      >
         <Image
-          alignSelf="end"
           mt={isNotSmallerScreen ? "0" : "12"}
           mb={isNotSmallerScreen ? "0" : "12"}
           maxWidth={{ base: "100vh", md: "130vh", lg: "130vh", xl: "130vh" }}
           borderRadius="full"
           backgroundColor="transparent"
-          boxShadow="lg"
+          boxShadow="2xl"
           bg="#a26dff"
           boxSize="350px"
           src={xsxsa}
         />
-        <Circle
-          flexDirection="flow"
-          position="absolute"
-          bg="red.800"
-          opacity="0.04"
-          onDurationChange="0.8s"
-          w={10}
-          h={10}
-          p="40px"
-          boxShadow="7.8px 15.7px 15.7px  hsl(262deg 94% 79%)"
-        />
+      </Flex>
+      <HStack maxWidth={300}>
         <Lottie
+          height={100}
+          width="50%"
           animationData={spinner}
-          p="10px"
-          m="2px"
-          objectFit="cover"
+          objectFit="scale-down"
           onDurationChange={8}
           boxShadow="lg"
           opacity="0.5"
-          size="lg"
-          direction="column"
           maxWidth={{ base: "100vh", md: "130vh", lg: "130vh", xl: "130vh" }}
           borderRadius="full"
           backgroundColor="white.300"
-          alignContent="end"
-          justifyContent="space-evenly"
         />
-      </Flex>
-    </VStack>
+      </HStack>
+    </Stack>
   );
 }
 export default Home;
