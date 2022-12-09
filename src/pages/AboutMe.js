@@ -36,10 +36,10 @@ const AboutMe = () => {
 
       <Stack
         spacing={6}
-        border="1px solid lightpink"
+        border="20px solid lightpink"
         marginTop={10}
-        p={20}
-        bg="#673ab7"
+        padding={20}
+        borderColor="#673ab7"
       >
         <Text
           noOfLines={[1, 2, 3]}
