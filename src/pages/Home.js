@@ -37,7 +37,7 @@ function Home() {
           boxShadow="7.8px 15.7px 15.7px hsl(0deg 0% 0% / 0.26)"
         />
       </Stack>
-      <Flex direction="row-reverse" border="2px solid red">
+      <Flex direction="row-reverse">
         <Text
           as="h5"
           alignSelf="center"
