@@ -17,11 +17,12 @@ const AboutMe = () => {
   const [isNotSmallerScreen] = useMediaQuery("(min-width: 768px)");
   return (
     <Flex
-      with="100%"
+      mt={isNotSmallerScreen ? "0" : 16}
+      with="100vh"
       direction="row"
       alignSelf="center"
-      p="2px"
-      ml="10px"
+      padding={2}
+      ml={10}
       justifyContent="flex-start"
       justifySelf="flex-end"
     >
@@ -29,16 +30,16 @@ const AboutMe = () => {
         mt={isNotSmallerScreen ? "0" : 16}
         alignSelf="center"
         justifySelf="center"
-        pt={30}
+        pt={3}
       >
         {" "}
       </Flex>
 
       <Stack
         spacing={6}
-        border="20px solid lightpink"
+        border="10 px solid lightpink"
         marginTop={10}
-        padding={20}
+        padding={10}
         borderColor="#673ab7"
       >
         <Text
@@ -127,7 +128,7 @@ const AboutMe = () => {
               fontFamily="body"
               fontWeight="light"
             >
-              Html, Css, JavaScript,React.js
+              Html, Css, JavaScript, React.js
             </Text>
           </ListItem>
           <ListItem>

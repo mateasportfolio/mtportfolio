@@ -6,7 +6,6 @@ import {
   Text,
   Image,
   Stack,
-  Heading,
   HStack,
 } from "@chakra-ui/react";
 import React from "react";
@@ -38,16 +37,17 @@ function Home() {
           boxShadow="7.8px 15.7px 15.7px hsl(0deg 0% 0% / 0.26)"
         />
       </Stack>
-      <Flex direction="row-reverse">
-        <Heading
+      <Flex direction="row-reverse" border="2px solid red">
+        <Text
+          as="h5"
+          alignSelf="center"
           flexDirection="row"
-          textAlign="revert"
-          m="25px"
+          textAlign="start"
+          margin="25px"
           fontSize="5xl"
           fontWeight="hairline"
           pt="3px"
-          p="20px"
-          alignSelf="center"
+          padding="20px"
           fontFamily="body"
         >
           Hello,
@@ -76,7 +76,7 @@ function Home() {
               </span>
             </span>
           </Text>
-        </Heading>
+        </Text>
       </Flex>
 
       <Flex
