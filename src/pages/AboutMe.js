@@ -138,7 +138,7 @@ const AboutMe = () => {
               fontWeight="light"
               fontFamily="body"
             >
-              Illustrator, Photoshop, InDesign, XD
+              Illustrator, Photoshop, InDesign, XD, Figma
             </Text>
           </ListItem>
           <br />
@@ -160,7 +160,7 @@ const AboutMe = () => {
               fontFamily="body"
               fontWeight="light"
             >
-              German, Croatian, English and trying to learn Italian
+              German, Croatian, English
             </Text>
             <br />
           </ListItem>
