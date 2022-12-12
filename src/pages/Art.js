@@ -37,7 +37,7 @@ const Art = () => {
         rounded="md"
       />
       <Box>
-        <Text as="b" fontSize="xl" color="pink.400">
+        <Text as="b" fontSize="4xl" fontWeight="hairline" color="pink.400">
           {" "}
           Made with Photoshop and Illustrator
         </Text>

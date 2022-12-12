@@ -7,6 +7,7 @@ import Code from "./pages/Code";
 import Hosting from "./pages/Hosting";
 import Art from "./pages/Art";
 import AboutMe from "./pages/AboutMe";
+import Project from "./pages/Project";
 
 const App = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -23,6 +24,7 @@ const App = () => {
           <Route path="/art" element={<Art />} />
           <Route path="/code" element={<Code />} />
           <Route path="/hosting" element={<Hosting />} />
+          <Route path="/project" element={<Project />} />
         </Routes>
       </VStack>
     </>
