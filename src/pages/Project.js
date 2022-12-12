@@ -23,7 +23,6 @@ export default function Project() {
           display="flex"
           p="2px"
           m="100px"
-          border="1px solid  #9198e5"
           justifyContent="center"
         >
           <Button
