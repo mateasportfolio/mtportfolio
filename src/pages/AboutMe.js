@@ -20,9 +20,10 @@ const AboutMe = () => {
 
   return (
     <>
-      <Box p="10px">
+      <Box padding={15} ml={1}>
         <Image src={Lebenslauf} alt="pdf" />
       </Box>
+
       <Flex
         mt={isNotSmallerScreen ? "0" : 16}
         direction="row"
@@ -190,7 +191,7 @@ const AboutMe = () => {
               width="100%"
             >
               <br />
-              <Heading size="4xl" pt="15px" alignSelf="center" width="50%">
+              <Heading size="4xl" pt="15px" alignSelf="center">
                 Contact
               </Heading>
               <Flex
