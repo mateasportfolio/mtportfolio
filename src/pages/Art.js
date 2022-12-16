@@ -4,17 +4,17 @@ import {
   Stack,
   Box,
   VStack,
-  useMediaQuery,
+  //useMediaQuery,
   Text,
 } from "@chakra-ui/react";
 import klausur from "../assets/klausur.svg";
 import Schmuck from "../assets/Schmuck.svg";
 
 const Art = () => {
-  const [isNotSmallerScreen] = useMediaQuery("(min-width: 600px)");
+  //const [isNotSmallerScreen] = useMediaQuery("(min-width: 600px)");
 
   return (
-    <Stack direction={isNotSmallerScreen ? "row" : "column"}>
+    <Stack maxW="1200px">
       <Image
         boxSize="300%"
         w="600px"

@@ -1,5 +1,5 @@
 import "./styles.css";
-import { VStack, useMediaQuery, useColorMode } from "@chakra-ui/react";
+import { VStack, useColorMode } from "@chakra-ui/react";
 import { Route, Routes } from "react-router-dom";
 import { Header } from "./components/Header";
 import Home from "./pages/Home";
@@ -12,11 +12,11 @@ import Project from "./pages/Project";
 const App = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   const isDark = colorMode === "dark";
-  const [isNotSmallerScreen] = useMediaQuery("(min-width: 768px)");
+  // const [isNotSmallerScreen] = useMediaQuery("(min-width: 768px)");
 
   return (
     <>
-      <VStack p={5} mt={isNotSmallerScreen ? "0" : 16} align="flex-start">
+      <VStack p={5} align="flex-start" alignItems="center">
         <Header isDark={isDark} toggleColorMode={toggleColorMode} />
         <Routes>
           <Route path="/" element={<Home />} />

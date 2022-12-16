@@ -5,7 +5,7 @@ const Code = () => {
   const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
 
   return (
-    <Flex>
+    <Flex maxW="1200px">
       <Box mt={isNotSmallerScreen ? "0" : 16} align="flex-start">
         <VStack>
           <Text fontSize="3xl" fontWeight="semibold">

@@ -19,7 +19,13 @@ const AboutMe = () => {
   const [isNotSmallerScreen] = useMediaQuery("(min-width: 768px)");
 
   return (
-    <>
+    <Box
+      display="flex"
+      alignItems="center"
+      flexDirection="column"
+      width="100%"
+      maxW="1200px"
+    >
       <Box padding={15} ml={1}>
         <Image src={Lebenslauf} alt="pdf" />
       </Box>
@@ -257,7 +263,7 @@ const AboutMe = () => {
           </Box>
         </Stack>
       </Flex>
-    </>
+    </Box>
   );
 };
 export default AboutMe;
