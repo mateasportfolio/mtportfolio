@@ -59,7 +59,7 @@ export const Header = ({ isDark, toggleColorMode }) => {
             <Link to="/aboutme">About Me</Link>
           </MenuItem>{" "}
           <MenuItem>
-            <Link to="/project">Project</Link>
+            <Link to="/portfolio">Portfolio</Link>
           </MenuItem>
         </MenuList>
       </Menu>

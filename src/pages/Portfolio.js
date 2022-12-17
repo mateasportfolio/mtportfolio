@@ -2,7 +2,7 @@ import { Box, Text, Stack, Button, useMediaQuery } from "@chakra-ui/react";
 import React from "react";
 import { Link } from "@chakra-ui/react";
 
-export default function Project() {
+export default function Portfolio() {
   const [isNotSmallerScreen] = useMediaQuery("(min-width: 600px)");
   return (
     <Box>
