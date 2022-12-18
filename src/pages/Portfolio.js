@@ -81,8 +81,6 @@ export default function Portfolio() {
               fontWeight="hairline"
               color="pink.400"
               href="https://melodious-arithmetic-98d708.netlify.app/"
-              m="30px"
-              p="4px"
             >
               Meditation Timer
             </ChakraLink>
