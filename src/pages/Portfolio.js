@@ -13,13 +13,7 @@ export default function Portfolio() {
 
   return (
     <>
-      <Flex
-        border="1px solid red"
-        w="100%"
-        padding="10"
-        flexDir="column"
-        maxW="1200px"
-      >
+      <Flex w="100%" padding="10" flexDir="column" maxW="1200px">
         <Box textAlign="center" marginBottom="16px">
           <Text as="b" fontSize="4xl" fontWeight="hairline" color="pink.400">
             Made with React.js
@@ -33,7 +27,7 @@ export default function Portfolio() {
         >
           <Link to="/savings-calculator">
             <Flex
-              border="1px solid red"
+              border="1px solid pink"
               flexDirection="column"
               cursor="pointer"
             >
@@ -59,7 +53,7 @@ export default function Portfolio() {
             textDecor="none"
           >
             <Flex
-              border="1px solid red"
+              border="1px solid pink"
               flexDirection="column"
               cursor="pointer"
             >
@@ -81,7 +75,7 @@ export default function Portfolio() {
             </Flex>
           </ChakraLink>
           <Flex
-            // border="1px solid red"
+            border="1px solid pink"
             flexDirection="column"
             cursor="pointer"
             onClick={() => setOpen(true)}
