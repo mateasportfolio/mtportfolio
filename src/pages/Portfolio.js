@@ -14,6 +14,15 @@ import Faltschachtel from "../assets/portfolio/Faltschachtel.png";
 import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 import "yet-another-react-lightbox/styles.css";
 import FlyerBasstoelpel from "../assets/portfolio/FlyerBasstoelpel_Seite_1.png";
+import FlyerBasstoelpel2 from "../assets/portfolio/FlyerBasstoelpel2.png";
+import Sony from "../assets/portfolio/Sony.png";
+import KornSchrot_Seite_1 from "../assets/portfolio/KornSchrot_Seite_1.png";
+import KornSchrot_Seite_2 from "../assets/portfolio/KornSchrot_Seite_2.png";
+import KornSchrot_Seite_3 from "../assets/portfolio/KornSchrot_Seite_3.png";
+import KornSchrot_Seite_4 from "../assets/portfolio/KornSchrot_Seite_4.png";
+import KornSchrot_Seite_5 from "../assets/portfolio/KornSchrot_Seite_5.png";
+import KornSchrot_Seite_6 from "../assets/portfolio/KornSchrot_Seite_6.png";
+import KornSchrot_Seite_7 from "../assets/portfolio/KornSchrot_Seite_7.png";
 
 export default function Portfolio() {
   const [isNotSmallerScreen] = useMediaQuery("(min-width: 600px)");
@@ -92,8 +101,17 @@ export default function Portfolio() {
           open={open}
           close={() => setOpen(false)}
           slides={[
-            { src: Faltschachtel, width: 400, height: 400 },
-            { src: FlyerBasstoelpel, width: 400, height: 400 },
+            { src: Faltschachtel, width: 600, height: 800 },
+            { src: FlyerBasstoelpel, width: 600, height: 800 },
+            { src: FlyerBasstoelpel2, width: 600, height: 800 },
+            { src: Sony, width: 600, height: 800 },
+            { src: KornSchrot_Seite_1, width: 400, height: 800 },
+            { src: KornSchrot_Seite_2, width: 400, height: 800 },
+            { src: KornSchrot_Seite_3, width: 400, height: 800 },
+            { src: KornSchrot_Seite_4, width: 400, height: 800 },
+            { src: KornSchrot_Seite_5, width: 400, height: 800 },
+            { src: KornSchrot_Seite_6, width: 400, height: 800 },
+            { src: KornSchrot_Seite_7, width: 400, height: 800 },
           ]}
           plugins={[Fullscreen]}
         />
