@@ -84,7 +84,7 @@ export default function Portfolio() {
       </Box>
       <Flex>
         <button type="button" onClick={() => setOpen(true)}>
-          Open Lightbox
+          OPEN PORTFOLIO
         </button>
 
         <Lightbox
