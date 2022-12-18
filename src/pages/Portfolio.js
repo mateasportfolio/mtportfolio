@@ -27,6 +27,7 @@ import Lodge4 from "../assets/portfolio/Lodge4.png";
 import Lodge5 from "../assets/portfolio/Lodge5.png";
 import Lodge6 from "../assets/portfolio/Lodge6.png";
 import Lodge7 from "../assets/portfolio/Lodge7.png";
+import Typo from "../assets/portfolio/Typo.png";
 
 export default function Portfolio() {
   const [isNotSmallerScreen] = useMediaQuery("(min-width: 600px)");
@@ -109,6 +110,7 @@ export default function Portfolio() {
             { src: Lodge5, width: 400, height: 800 },
             { src: Lodge6, width: 400, height: 800 },
             { src: Lodge7, width: 400, height: 800 },
+            { src: Typo, width: 400, height: 800 },
           ]}
           plugins={[Fullscreen, Thumbnails]}
         />
