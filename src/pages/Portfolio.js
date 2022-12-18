@@ -22,9 +22,7 @@ import KornSchrot_Seite_4 from "../assets/portfolio/KornSchrot_Seite_4.png";
 import KornSchrot_Seite_5 from "../assets/portfolio/KornSchrot_Seite_5.png";
 import KornSchrot_Seite_6 from "../assets/portfolio/KornSchrot_Seite_6.png";
 import KornSchrot_Seite_7 from "../assets/portfolio/KornSchrot_Seite_7.png";
-import "yet-another-react-lightbox/plugins/thumbnails.css";
-import "yet-another-react-lightbox/styles.css";
-import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
+import Captions from "yet-another-react-lightbox/plugins/captions";
 import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import Lodge1 from "../assets/portfolio/Lodge1.png";
 import Lodge2 from "../assets/portfolio/Lodge2.png";
@@ -34,7 +32,9 @@ import Lodge5 from "../assets/portfolio/Lodge5.png";
 import Lodge6 from "../assets/portfolio/Lodge6.png";
 import Lodge7 from "../assets/portfolio/Lodge7.png";
 import Typo from "../assets/portfolio/Typo.png";
-
+import "yet-another-react-lightbox/plugins/thumbnails.css";
+import "yet-another-react-lightbox/plugins/captions.css";
+import "yet-another-react-lightbox/styles.css";
 export default function Portfolio() {
   const [isNotSmallerScreen] = useMediaQuery("(min-width: 600px)");
 
@@ -116,27 +116,69 @@ export default function Portfolio() {
           open={open}
           close={() => setOpen(false)}
           slides={[
-            { src: Faltschachtel, width: 600, height: 800 },
-            { src: FlyerBasstoelpel, width: 600, height: 800 },
-            { src: FlyerBasstoelpel2, width: 600, height: 800 },
-            { src: Sony, width: 600, height: 800 },
-            { src: KornSchrot_Seite_1, width: 400, height: 800 },
+            {
+              src: Faltschachtel,
+              width: 600,
+              height: 800,
+              title: "Faltschachtel",
+              description: "Illustrator",
+            },
+            {
+              src: FlyerBasstoelpel,
+              width: 600,
+              height: 800,
+              title: "FlyerBasstoelpel",
+              description: "InDesign",
+            },
+            {
+              src: FlyerBasstoelpel2,
+              width: 600,
+              height: 800,
+              title: "FlyerBasstoelpel",
+              description: "InDesign",
+            },
+            {
+              src: Sony,
+              width: 600,
+              height: 800,
+              title: "Sony",
+              description: "Photoshop",
+            },
+            {
+              src: KornSchrot_Seite_1,
+              width: 400,
+              height: 800,
+              title: "Korn und Schrot",
+              description: "Illustrator und InDesign",
+            },
             { src: KornSchrot2, width: 400, height: 800 },
             { src: KornSchrot_Seite_3, width: 400, height: 800 },
             { src: KornSchrot_Seite_4, width: 400, height: 800 },
             { src: KornSchrot_Seite_5, width: 400, height: 800 },
             { src: KornSchrot_Seite_6, width: 400, height: 800 },
             { src: KornSchrot_Seite_7, width: 400, height: 800 },
-            { src: Lodge1, width: 400, height: 800 },
+            {
+              src: Lodge1,
+              width: 400,
+              height: 800,
+              title: "Lodge",
+              description: "InDesign",
+            },
             { src: Lodge2, width: 400, height: 800 },
             { src: Lodge3, width: 400, height: 800 },
             { src: Lodge4, width: 400, height: 800 },
             { src: Lodge5, width: 400, height: 800 },
             { src: Lodge6, width: 400, height: 800 },
             { src: Lodge7, width: 400, height: 800 },
-            { src: Typo, width: 400, height: 800 },
+            {
+              src: Typo,
+              width: 400,
+              height: 800,
+              title: "Tyographie",
+              description: "Illustrator und InDesign",
+            },
           ]}
-          plugins={[Fullscreen, Thumbnails]}
+          plugins={[Captions, Thumbnails]}
         />
       </Flex>
     </>
