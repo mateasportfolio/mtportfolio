@@ -1,6 +1,6 @@
 import React from "react";
 import cvijet from "../assets/cvijet.json";
-import Lebenslauf from "../assets/MateaTabakCV.png";
+import cv from "../assets/cv.png";
 
 import {
   Text,
@@ -28,7 +28,7 @@ const AboutMe = () => {
       maxW="1200px"
     >
       <Box padding={15} ml={1}>
-        <Image src={Lebenslauf} alt="pdf" />
+        <Image src={cv} alt="image" />
       </Box>
 
       <Flex
