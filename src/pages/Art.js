@@ -1,24 +1,14 @@
 import React from "react";
-import {
-  Image,
-  Stack,
-  Box,
-  VStack,
-  //useMediaQuery,
-  Text,
-} from "@chakra-ui/react";
+import { Image, Stack, Box, VStack, Text } from "@chakra-ui/react";
 import klausur from "../assets/klausur.svg";
 import Schmuck from "../assets/Schmuck.svg";
 
 const Art = () => {
-  //const [isNotSmallerScreen] = useMediaQuery("(min-width: 600px)");
-
   return (
     <Stack maxW="1200px">
       <Image
-        boxSize="300%"
-        w="600px"
-        m="50px"
+        height="100%vh"
+        m="30px"
         opacity="revert-layer"
         color="whiteAlpha.900"
         boxShadow="1px 1px 2px red, 0 0 25px pink, 0 0 5px darkblue"
