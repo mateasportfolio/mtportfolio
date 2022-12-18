@@ -177,7 +177,12 @@ const AboutMe = () => {
               width="100%"
             >
               <br />
-              <Heading size="4xl" pt="15px" alignSelf="center">
+              <Heading
+                size="4xl"
+                pt="15px"
+                alignSelf="center"
+                maxWidth="1200px"
+              >
                 Contact
               </Heading>
               <Flex
@@ -227,6 +232,7 @@ const AboutMe = () => {
                 as="input"
               />{" "}
               <Input
+                maxW="1200px"
                 position="relative"
                 alignItems="center"
                 justifyContent="center"
@@ -237,7 +243,7 @@ const AboutMe = () => {
                 type="adress"
                 fontWeight={600}
                 as="input"
-                placeholder="Schloßstr.128  12163"
+                placeholder="Schloßstr.128  12163 Berlin"
               />
             </Stack>
           </Box>
