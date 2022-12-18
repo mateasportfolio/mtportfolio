@@ -19,6 +19,7 @@ const Art = () => {
         position="absolute"
         bg="#ff009c"
         opacity="0.07"
+        f
         w="300px"
         h="300px"
         alignSelf="flex-end"

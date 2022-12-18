@@ -1,6 +1,7 @@
 import React from "react";
 import cvijet from "../assets/cvijet.json";
-import Lebenslauf from "../assets/Lebenslauf.jpg";
+import Lebenslauf from "../assets/MateaTabakCV.png";
+
 import {
   Text,
   Stack,
@@ -95,30 +96,9 @@ const AboutMe = () => {
                     fontFamily="body"
                     fontWeight="light"
                   >
-                    2008-2012 Language High School Pitagora ,Croatia 2006- 2008
-                    Skalice Primary school, Croatia
+                    2008-2012 Language High School Pitagora (Abitur), Croatia
                   </Text>
                 </ListItem>
-              </ListItem>
-              <ListItem>
-                <Text
-                  noOfLines={[1, 2, 3]}
-                  fontSize="2xl"
-                  fontFamily="body"
-                  fontWeight="light"
-                >
-                  2005-2006 Goethe Comprehensive School, Dieburg
-                </Text>
-              </ListItem>
-              <ListItem>
-                <Text
-                  noOfLines={[1, 2, 3]}
-                  fontSize="2xl"
-                  fontFamily="body"
-                  fontWeight="light"
-                >
-                  2000-2004 Ysenburg Primary School Hailer-Meerholz, Gelnhausen
-                </Text>
               </ListItem>
             </ListItem>
           </UnorderedList>
