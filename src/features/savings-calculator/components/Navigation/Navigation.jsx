@@ -13,7 +13,6 @@ const Navigation = ({ setComponent }) => {
   return (
     <HStack spacing={2} p="2px" mr="10px">
       <Box
-        p="20px"
         onClick={() => setComponent("SAVINGS")}
         fontSize={{ base: "24px", md: "40px", lg: "56px" }}
       >
