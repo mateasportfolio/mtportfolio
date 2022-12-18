@@ -13,6 +13,7 @@ import { useState } from "react";
 import Faltschachtel from "../assets/portfolio/Faltschachtel.png";
 import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 import "yet-another-react-lightbox/styles.css";
+import FlyerBasstölpel from "../assets/portfolio/FlyerBasstölpel_Seite_1.png";
 
 export default function Portfolio() {
   const [isNotSmallerScreen] = useMediaQuery("(min-width: 600px)");
@@ -90,7 +91,10 @@ export default function Portfolio() {
         <Lightbox
           open={open}
           close={() => setOpen(false)}
-          slides={[{ src: Faltschachtel, width: 400, height: 400 }]}
+          slides={[
+            { src: Faltschachtel, width: 400, height: 400 },
+            { src: FlyerBasstölpel, width: 400, height: 400 },
+          ]}
           plugins={[Fullscreen]}
         />
       </Flex>
