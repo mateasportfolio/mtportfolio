@@ -8,14 +8,14 @@ import Hosting from "./pages/Hosting";
 import Art from "./pages/Art";
 import AboutMe from "./pages/AboutMe";
 import Portfolio from "./pages/Portfolio";
-import Lightbox from "yet-another-react-lightbox";
-import { useState } from "react";
+//import Lightbox from "yet-another-react-lightbox";
+//import { useState } from "react";
 
 const App = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   const isDark = colorMode === "dark";
 
-  const [open, setOpen] = useState(false);
+  //const [open, setOpen] = useState(false);
   // const [isNotSmallerScreen] = useMediaQuery("(min-width: 768px)");
 
   return (
@@ -31,19 +31,9 @@ const App = () => {
           <Route path="/portfolio" element={<Portfolio />} />
         </Routes>
       </VStack>
-      <button type="button" onClick={() => setOpen(true)}>
+      {/* <button type="button" onClick={() => setOpen(true)}>
         Open Lightbox
-      </button>
-
-      <Lightbox
-        open={open}
-        close={() => setOpen(false)}
-        slides={[
-          // { src: timer },
-          { src: "/image2.jpg" },
-          { src: "/image3.jpg" },
-        ]}
-      />
+      </button> */}
     </>
   );
 };
