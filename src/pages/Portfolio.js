@@ -1,8 +1,14 @@
-import { Box, Text, Button, useMediaQuery, Flex } from "@chakra-ui/react";
+import {
+  Box,
+  Text,
+  Button,
+  useMediaQuery,
+  Flex,
+  Heading,
+} from "@chakra-ui/react";
 import React from "react";
 import { Link as ChakraLink } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-
 import Lightbox from "yet-another-react-lightbox";
 import { useState } from "react";
 import Faltschachtel from "../assets/portfolio/Faltschachtel.png";
@@ -84,10 +90,28 @@ export default function Portfolio() {
         </Box>
       </Box>
       <Flex>
-        <button type="button" onClick={() => setOpen(true)}>
-          OPEN PORTFOLIO
-        </button>
-
+        <ChakraLink>
+          <button
+            type="button"
+            onClick={() => setOpen(true)}
+            variant="outline"
+            w="min-content"
+            border="1px solid  #9198e5"
+            position="relative"
+            p="20px"
+            m="10px"
+            display="flex"
+            fontSize="xl"
+            fontWeight="hairline"
+            color="pink.400"
+          >
+            <Text fontWeight="hairline" fontFamily="heading" fontSize="4xl">
+              {" "}
+              Open
+              <Heading>Media Design Portfolio</Heading>
+            </Text>
+          </button>
+        </ChakraLink>
         <Lightbox
           open={open}
           close={() => setOpen(false)}
