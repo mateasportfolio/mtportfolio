@@ -50,14 +50,14 @@ export default function Portfolio() {
         >
           <Button
             w="min-content"
-            // border="1px solid  #9198e5"
-            // position="relative"
-            // p="20px"
-            // m="10px"
-            // display="flex"
-            // fontSize="xl"
-            // fontWeight="hairline"
-            // color="pink.400"
+            border="1px solid  #9198e5"
+            position="relative"
+            p="20px"
+            m="10px"
+            display="flex"
+            fontSize="xl"
+            fontWeight="hairline"
+            color="pink.400"
           >
             <Link to="/savings-calculator">Savings Calculator</Link>
           </Button>
