@@ -8,15 +8,11 @@ import Hosting from "./pages/Hosting";
 import Art from "./pages/Art";
 import AboutMe from "./pages/AboutMe";
 import Portfolio from "./pages/Portfolio";
-//import Lightbox from "yet-another-react-lightbox";
-//import { useState } from "react";
+import { SavingsCalculator } from "./features/savings-calculator/SavingsCalculator";
 
 const App = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   const isDark = colorMode === "dark";
-
-  //const [open, setOpen] = useState(false);
-  // const [isNotSmallerScreen] = useMediaQuery("(min-width: 768px)");
 
   return (
     <>
@@ -29,11 +25,9 @@ const App = () => {
           <Route path="/code" element={<Code />} />
           <Route path="/hosting" element={<Hosting />} />
           <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/savings-calculator" element={<SavingsCalculator />} />
         </Routes>
       </VStack>
-      {/* <button type="button" onClick={() => setOpen(true)}>
-        Open Lightbox
-      </button> */}
     </>
   );
 };

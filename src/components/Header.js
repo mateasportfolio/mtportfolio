@@ -57,7 +57,7 @@ export const Header = ({ isDark, toggleColorMode }) => {
           </MenuItem>
           <MenuItem color="pink.200">
             <Link to="/aboutme">About Me</Link>
-          </MenuItem>{" "}
+          </MenuItem>
           <MenuItem>
             <Link to="/portfolio">Portfolio</Link>
           </MenuItem>
