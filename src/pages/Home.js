@@ -72,7 +72,7 @@ function Home() {
             <span>
               I'm a future Mediadesigner / Webdesigner <br />
               <span>
-                I'm a Free Spirit, exploring Art, Music, and Technology.
+                I'm a Free Spirit, exploring Art, Music and Technology.
               </span>
             </span>
           </Text>
