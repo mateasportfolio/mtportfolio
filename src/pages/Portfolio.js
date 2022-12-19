@@ -8,8 +8,7 @@ import calculator from "../assets/calculator.png";
 import Faltschachtel from "../assets/portfolio/Faltschachtel.png";
 import { LightboxComponent } from "../components/Lightbox";
 import Lottie from "lottie-react";
-import gradient from "../assets/gradient.json";
-// import birne from "./../assets/birne.json";
+import confetti from "../assets/confetti.json";
 
 export default function Portfolio() {
   const [open, setOpen] = useState(false);
@@ -17,6 +16,16 @@ export default function Portfolio() {
   return (
     <>
       <Flex w="100%" padding="10" flexDir="column" maxW="1200px">
+        {" "}
+        <Box>
+          <Lottie
+            animationData={confetti}
+            position="absolute"
+            speed="8"
+            loop={false}
+            autoPlay={true}
+          />
+        </Box>
         <Box textAlign="center" marginBottom="16px">
           <Text as="b" fontSize="4xl" fontWeight="hairline" color="pink.400">
             Made with React.js
@@ -101,16 +110,8 @@ export default function Portfolio() {
           </Flex>
         </Flex>
       </Flex>
-      <Box>
-        <Lottie animationData={gradient} width="100vh" speed="8" />
-      </Box>
+
       <LightboxComponent open={open} setOpen={setOpen} />
-      {/* <Lottie
-        animationData={birne}
-        speed="9"
-        justifyContent="flex-start"
-        flexDir="row"
-      /> */}
     </>
   );
 }
