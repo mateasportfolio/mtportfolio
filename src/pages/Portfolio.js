@@ -7,6 +7,9 @@ import timer from "../assets/timer.png";
 import calculator from "../assets/calculator.png";
 import Faltschachtel from "../assets/portfolio/Faltschachtel.png";
 import { LightboxComponent } from "../components/Lightbox";
+import Lottie from "lottie-react";
+import gradient from "../assets/gradient.json";
+// import birne from "./../assets/birne.json";
 
 export default function Portfolio() {
   const [open, setOpen] = useState(false);
@@ -98,7 +101,16 @@ export default function Portfolio() {
           </Flex>
         </Flex>
       </Flex>
+      <Box>
+        <Lottie animationData={gradient} width="100vh" speed="8" />
+      </Box>
       <LightboxComponent open={open} setOpen={setOpen} />
+      {/* <Lottie
+        animationData={birne}
+        speed="9"
+        justifyContent="flex-start"
+        flexDir="row"
+      /> */}
     </>
   );
 }

@@ -175,6 +175,7 @@ const AboutMe = () => {
               justifyContent="center"
               alignItems="center"
               width="100%"
+              maxW={1200}
             >
               <br />
               <Heading
