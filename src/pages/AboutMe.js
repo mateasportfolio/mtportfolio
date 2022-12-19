@@ -1,6 +1,6 @@
 import React from "react";
 import cvijet from "../assets/cvijet.json";
-import CV from "../assets/CV.png";
+import cv from "../assets/cv.png";
 
 import {
   Text,
@@ -28,7 +28,7 @@ const AboutMe = () => {
       maxW="1200px"
     >
       <Box padding={15} ml={1}>
-        <Image src={CV} alt="image" />
+        <Image src={cv} alt="image" />
       </Box>
 
       <Flex
