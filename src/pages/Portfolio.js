@@ -17,15 +17,7 @@ export default function Portfolio() {
     <>
       <Flex w="100%" padding="10" flexDir="column" maxW="1200px">
         {" "}
-        <Box>
-          <Lottie
-            animationData={confetti}
-            position="absolute"
-            speed="8"
-            loop={false}
-            autoPlay={true}
-          />
-        </Box>
+        <Box></Box>
         <Box textAlign="center" marginBottom="16px">
           <Text as="b" fontSize="4xl" fontWeight="hairline" color="pink.400">
             Made with React.js
@@ -110,7 +102,13 @@ export default function Portfolio() {
           </Flex>
         </Flex>
       </Flex>
-
+      <Lottie
+        animationData={confetti}
+        position="absolute"
+        speed="8"
+        loop={false}
+        autoPlay={true}
+      />
       <LightboxComponent open={open} setOpen={setOpen} />
     </>
   );
