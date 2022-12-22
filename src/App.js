@@ -9,7 +9,7 @@ import Art from "./pages/Art";
 import AboutMe from "./pages/AboutMe";
 import Portfolio from "./pages/Portfolio";
 import { SavingsCalculator } from "./features/savings-calculator/SavingsCalculator";
-
+import MeditationTimer from "./features/meditation-timer/MeditationTimer";
 const App = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   const isDark = colorMode === "dark";
@@ -26,6 +26,7 @@ const App = () => {
           <Route path="/hosting" element={<Hosting />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/savings-calculator" element={<SavingsCalculator />} />
+          <Route path="/meditation-timer" element={<MeditationTimer />} />
         </Routes>
       </VStack>
     </>

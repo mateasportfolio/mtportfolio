@@ -1,6 +1,5 @@
 import { Box, Text, Flex, Image } from "@chakra-ui/react";
 import React from "react";
-import { Link as ChakraLink } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import timer from "../assets/timer.png";
@@ -52,10 +51,7 @@ export default function Portfolio() {
               />
             </Flex>
           </Link>
-          <ChakraLink
-            href="https://melodious-arithmetic-98d708.netlify.app/"
-            textDecor="none"
-          >
+          <Link to="/meditation-timer">
             <Flex
               border="1px solid pink"
               flexDirection="column"
@@ -77,7 +73,7 @@ export default function Portfolio() {
                 borderRadius="10px"
               />
             </Flex>
-          </ChakraLink>
+          </Link>
           <Flex
             border="1px solid pink"
             flexDirection="column"
