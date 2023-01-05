@@ -117,7 +117,7 @@ export default function Portfolio() {
                   justifyContent="center"
                   textAlign="center"
                 >
-                  UXUI Design Landingpage
+                  UXUI Design Landingpagewefe
                 </Text>
                 <Image
                   src={creativeweb2}
