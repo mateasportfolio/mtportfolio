@@ -8,7 +8,6 @@ import Faltschachtel from "../assets/portfolio/Faltschachtel.png";
 import { LightboxComponent } from "../components/Lightbox";
 import Lottie from "lottie-react";
 import confetti from "../assets/confetti.json";
-// import creativeweb from "../assets/creativeweb.png";
 import creativeweb2 from "../assets/creativeweb2.png";
 
 export default function Portfolio() {
