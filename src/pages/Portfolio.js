@@ -8,6 +8,8 @@ import Faltschachtel from "../assets/portfolio/Faltschachtel.png";
 import { LightboxComponent } from "../components/Lightbox";
 import Lottie from "lottie-react";
 import confetti from "../assets/confetti.json";
+// import creativeweb from "../assets/creativeweb.png";
+import creativeweb2 from "../assets/creativeweb2.png";
 
 export default function Portfolio() {
   const [open, setOpen] = useState(false);
@@ -95,6 +97,38 @@ export default function Portfolio() {
               objectFit="cover"
               borderRadius="10px"
             />
+          </Flex>
+
+          <Flex
+            wrap="wrap"
+            gap="20px"
+            alignItems="center"
+            justifyContent="center"
+          >
+            <Link to="/https://bespoke-lamington-c1551d.netlify.app">
+              {/* <Link href="https://bespoke-lamington-c1551d.netlify.app"> */}
+              <Flex
+                border="1px solid pink"
+                flexDirection="column"
+                cursor="pointer"
+              >
+                <Text
+                  marginBottom="10px"
+                  alignItems="center"
+                  justifyContent="center"
+                  textAlign="center"
+                >
+                  UXUI Design Landingpage
+                </Text>
+                <Image
+                  src={creativeweb2}
+                  height="320px"
+                  width="320px"
+                  objectFit="fill"
+                  borderRadius="10px"
+                />
+              </Flex>
+            </Link>
           </Flex>
         </Flex>
       </Flex>
