@@ -24,6 +24,7 @@ import Typo from "../assets/portfolio/Typo.png";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 import "yet-another-react-lightbox/plugins/captions.css";
 import "yet-another-react-lightbox/styles.css";
+import herz from "../assets/herz.png";
 
 export const LightboxComponent = ({ open, setOpen }) => {
   return (
@@ -37,6 +38,13 @@ export const LightboxComponent = ({ open, setOpen }) => {
           height: 800,
           title: "Faltschachtel",
           description: "Illustrator",
+        },
+        {
+          src: herz,
+          width: 600,
+          height: 800,
+          title: "Herz Tarot Card",
+          description: "Photoshop",
         },
         {
           src: FlyerBasstoelpel,
