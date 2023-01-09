@@ -50,6 +50,8 @@ const Code = () => {
             static Html.
           </Text>
         </VStack>
+
+        <Box border-radius="80%" w="400px" h="400px" backgroung="pink" />
       </Box>
     </Flex>
   );

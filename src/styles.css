@@ -63,3 +63,9 @@
   /* Usually an anti-A11Y practice but set to remove an annoyance just for this demo */
   outline: 0;
 }
+
+.box_ {
+  width: 200px;
+  height: 200px;
+  background: blue;
+}
