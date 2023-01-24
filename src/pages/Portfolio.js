@@ -9,6 +9,7 @@ import { LightboxComponent } from "../components/Lightbox";
 import Lottie from "lottie-react";
 import confetti from "../assets/confetti.json";
 import creativeweb2 from "../assets/creativeweb2.png";
+import front from "../assets/portfolio/front.png";
 
 export default function Portfolio() {
   const [open, setOpen] = useState(false);
@@ -17,7 +18,6 @@ export default function Portfolio() {
     <>
       <Flex w="100%" padding="10" flexDir="column" maxW="1200px">
         {" "}
-        <Box></Box>
         <Box textAlign="center" marginBottom="16px">
           <Text as="b" fontSize="4xl" fontWeight="hairline" color="pink.400">
             Made with React.js
@@ -128,6 +128,34 @@ export default function Portfolio() {
                 />
               </Flex>
             </Link>
+          </Flex>
+          <Flex
+            wrap="wrap"
+            gap="20px"
+            alignItems="center"
+            justifyContent="center"
+          >
+            <Flex
+              border="1px solid pink"
+              flexDirection="column"
+              cursor="pointer"
+            >
+              <Text
+                marginBottom="10px"
+                alignItems="center"
+                justifyContent="center"
+                textAlign="center"
+              >
+                Frontendchallenge
+              </Text>
+              <Image
+                src={front}
+                height="320px"
+                width="320px"
+                objectFit="fill"
+                borderRadius="10px"
+              />
+            </Flex>
           </Flex>
         </Flex>
       </Flex>
