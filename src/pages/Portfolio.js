@@ -106,12 +106,15 @@ export default function Portfolio() {
             alignItems="center"
             justifyContent="center"
           >
-            <Link to="/https://bespoke-lamington-c1551d.netlify.app">
-              {/* <Link href="https://bespoke-lamington-c1551d.netlify.app"> */}
-              <Flex
-                border="1px solid pink"
-                flexDirection="column"
-                cursor="pointer"
+            <Flex
+              border="1px solid pink"
+              flexDirection="column"
+              cursor="pointer"
+            >
+              <Link
+                textAlign={"center"}
+                href="https://bespoke-lamington-c1551d.netlify.app"
+                isExternal
               >
                 <Text
                   marginBottom="10px"
@@ -128,8 +131,8 @@ export default function Portfolio() {
                   objectFit="fill"
                   borderRadius="10px"
                 />
-              </Flex>
-            </Link>
+              </Link>
+            </Flex>
           </Flex>
           <Flex
             wrap="wrap"
@@ -148,7 +151,6 @@ export default function Portfolio() {
                 isExternal
               >
                 Frontend Challenge
-                {/* <Link to="https://lively-concha-b269df.netlify.app"> */}
                 <Text
                   marginBottom="10px"
                   alignItems="center"
@@ -163,7 +165,6 @@ export default function Portfolio() {
                   borderRadius="10px"
                 />
               </Link>
-              {/* </Link> */}
             </Flex>
           </Flex>
         </Flex>
