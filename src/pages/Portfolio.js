@@ -1,6 +1,8 @@
 import { Box, Text, Flex, Image } from "@chakra-ui/react";
+// import { Link as ReachLink } from "@reach/router";
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "@chakra-ui/react";
+// import { Link } from "react-router-dom";
 import { useState } from "react";
 import timer from "../assets/timer.png";
 import calculator from "../assets/calculator.png";
@@ -140,21 +142,28 @@ export default function Portfolio() {
               flexDirection="column"
               cursor="pointer"
             >
-              <Text
-                marginBottom="10px"
-                alignItems="center"
-                justifyContent="center"
-                textAlign="center"
+              <Link
+                textAlign={"center"}
+                href="https://lively-concha-b269df.netlify.app"
+                isExternal
               >
-                Frontendchallenge
-              </Text>
-              <Image
-                src={front}
-                height="320px"
-                width="320px"
-                objectFit="fill"
-                borderRadius="10px"
-              />
+                Frontend Challenge
+                {/* <Link to="https://lively-concha-b269df.netlify.app"> */}
+                <Text
+                  marginBottom="10px"
+                  alignItems="center"
+                  justifyContent="center"
+                  textAlign="center"
+                ></Text>
+                <Image
+                  src={front}
+                  height="320px"
+                  width="320px"
+                  objectFit="fill"
+                  borderRadius="10px"
+                />
+              </Link>
+              {/* </Link> */}
             </Flex>
           </Flex>
         </Flex>
