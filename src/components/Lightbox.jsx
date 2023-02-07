@@ -25,6 +25,7 @@ import "yet-another-react-lightbox/plugins/thumbnails.css";
 import "yet-another-react-lightbox/plugins/captions.css";
 import "yet-another-react-lightbox/styles.css";
 import herz from "../assets/herz.png";
+import art from "../assets/portfolio/art.png";
 
 export const LightboxComponent = ({ open, setOpen }) => {
   return (
@@ -37,6 +38,13 @@ export const LightboxComponent = ({ open, setOpen }) => {
           width: 600,
           height: 800,
           title: "Faltschachtel",
+          description: "Illustrator",
+        },
+        {
+          src: art,
+          width: 600,
+          height: 800,
+          title: "Abstract Planet",
           description: "Illustrator",
         },
         {
