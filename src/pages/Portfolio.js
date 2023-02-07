@@ -10,7 +10,7 @@ import Faltschachtel from "../assets/portfolio/Faltschachtel.png";
 import { LightboxComponent } from "../components/Lightbox";
 import Lottie from "lottie-react";
 import confetti from "../assets/confetti.json";
-import creativeweb2 from "../assets/creativeweb2.png";
+import mohn2 from "../assets/mohn2.png";
 import front from "../assets/portfolio/front.png";
 
 export default function Portfolio() {
@@ -125,7 +125,7 @@ export default function Portfolio() {
                   UXUI Design Landingpage
                 </Text>
                 <Image
-                  src={creativeweb2}
+                  src={mohn2}
                   height="320px"
                   width="320px"
                   objectFit="fill"
