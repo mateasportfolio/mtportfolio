@@ -179,7 +179,7 @@ const AboutMe = () => {
             >
               <br />
               <Heading
-                size="4xl"
+                size="2xl"
                 pt="15px"
                 alignSelf="center"
                 maxWidth="1200px"
