@@ -47,7 +47,7 @@ function Home() {
           fontSize="5xl"
           fontWeight="hairline"
           pt="3px"
-          padding="20px"
+          padding="100px"
           fontFamily="body"
         >
           Hello,
