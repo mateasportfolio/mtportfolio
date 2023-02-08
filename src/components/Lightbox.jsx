@@ -26,6 +26,7 @@ import "yet-another-react-lightbox/plugins/captions.css";
 import "yet-another-react-lightbox/styles.css";
 import herz from "../assets/herz.png";
 import art from "../assets/portfolio/art.png";
+import banner from "../assets/portfolio/banner.png";
 
 export const LightboxComponent = ({ open, setOpen }) => {
   return (
@@ -75,6 +76,13 @@ export const LightboxComponent = ({ open, setOpen }) => {
           height: 800,
           title: "Sony",
           description: "Photoshop",
+        },
+        {
+          src: banner,
+          width: 600,
+          height: 800,
+          title: "Flyer",
+          description: "Figma",
         },
         {
           src: KornSchrot_Seite_1,
