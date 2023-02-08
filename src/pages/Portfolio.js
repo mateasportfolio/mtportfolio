@@ -1,8 +1,8 @@
 import { Box, Text, Flex, Image } from "@chakra-ui/react";
 // import { Link as ReachLink } from "@reach/router";
 import React from "react";
-import { Link } from "@chakra-ui/react";
-// import { Link } from "react-router-dom";
+// import { Link } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import timer from "../assets/timer.png";
 import calculator from "../assets/calculator.png";

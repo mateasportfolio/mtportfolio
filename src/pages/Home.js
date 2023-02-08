@@ -10,6 +10,7 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import xsxsa from "../assets/xsxsa.png";
+//import matea from "../assets/matea.jpeg";
 import Lottie from "lottie-react";
 import spinner from "./../assets/spinner.json";
 
@@ -101,6 +102,7 @@ function Home() {
           bg="#a26dff"
           boxSize="350px"
           src={xsxsa}
+          // src={matea}
         />
       </Flex>
       <HStack maxWidth={300}>
