@@ -1,5 +1,7 @@
 import { Box, Flex, Text, useMediaQuery, VStack } from "@chakra-ui/react";
 import React from "react";
+// import { Link } from "react-router-dom";
+import { Link } from "@chakra-ui/react";
 
 const Code = () => {
   const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
@@ -48,6 +50,9 @@ const Code = () => {
             The Connection : to run my Portfolio ,it needs to have a Host (
             Github) and Netlify runs a build Process to pre-render the pages in
             static Html.
+            <Link href="https://bespoke-lamington-c1551d.netlify.app">
+              LINK
+            </Link>
           </Text>
         </VStack>
 

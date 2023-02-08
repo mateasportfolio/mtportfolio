@@ -1,8 +1,6 @@
 import { Box, Text, Flex, Image } from "@chakra-ui/react";
-// import { Link as ReachLink } from "@reach/router";
 import React from "react";
-// import { Link } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
+// import Link from "@chakra-ui/react";
 import { useState } from "react";
 import timer from "../assets/timer.png";
 import calculator from "../assets/calculator.png";
@@ -12,6 +10,7 @@ import Lottie from "lottie-react";
 import confetti from "../assets/confetti.json";
 import mohn2 from "../assets/mohn2.png";
 import front from "../assets/portfolio/front.png";
+import { Link } from "react-router-dom";
 
 export default function Portfolio() {
   const [open, setOpen] = useState(false);
@@ -111,27 +110,35 @@ export default function Portfolio() {
               flexDirection="column"
               cursor="pointer"
             >
-              <Link
-                textAlign={"center"}
-                href="https://bespoke-lamington-c1551d.netlify.app"
-                isExternal
+              <Text
+                marginBottom="10px"
+                alignItems="center"
+                justifyContent="center"
+                textAlign="center"
               >
-                <Text
-                  marginBottom="10px"
-                  alignItems="center"
-                  justifyContent="center"
-                  textAlign="center"
+                {/* <Link
+                  href="https://bespoke-lamington-c1551d.netlify.app"
+                  isExternal
+                >
+               
+                </Link> */}
+
+                <a
+                  href="https://bespoke-lamington-c1551d.netlify.app"
+                  isExternal
+                  rel="noreferrer"
                 >
                   UXUI Design Prototype
-                </Text>
-                <Image
-                  src={mohn2}
-                  height="320px"
-                  width="320px"
-                  objectFit="fill"
-                  borderRadius="10px"
-                />
-              </Link>
+                </a>
+              </Text>
+              <Image
+                src={mohn2}
+                height="320px"
+                width="320px"
+                objectFit="fill"
+                borderRadius="10px"
+              />
+              {/* </Link> */}
             </Flex>
           </Flex>
           <Flex
@@ -145,18 +152,21 @@ export default function Portfolio() {
               flexDirection="column"
               cursor="pointer"
             >
-              <Link
-                textAlign={"center"}
-                href="https://lively-concha-b269df.netlify.app"
+              <a
+                textAlign="center"
+                // target={"_blank"}
+                rel="noreferrer"
+                href={"https://lively-concha-b269df.netlify.app"}
                 isExternal
               >
-                Bootstrap
                 <Text
                   marginBottom="10px"
                   alignItems="center"
                   justifyContent="center"
                   textAlign="center"
-                ></Text>
+                >
+                  Bootstrap
+                </Text>
                 <Image
                   src={front}
                   height="320px"
@@ -164,7 +174,7 @@ export default function Portfolio() {
                   objectFit="fill"
                   borderRadius="10px"
                 />
-              </Link>
+              </a>
             </Flex>
           </Flex>
         </Flex>
