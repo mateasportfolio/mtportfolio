@@ -116,17 +116,12 @@ export default function Portfolio() {
                 justifyContent="center"
                 textAlign="center"
               >
-                {/* <Link
-                  href="https://bespoke-lamington-c1551d.netlify.app"
-                  isExternal
-                >
-               
-                </Link> */}
-
                 <a
                   href="https://bespoke-lamington-c1551d.netlify.app"
                   isExternal
-                  rel="noreferrer"
+                  rel="alternate"
+                  hreflang="en"
+                  to="https://bespoke-lamington-c1551d.netlify.app"
                 >
                   UXUI Design Prototype
                 </a>
@@ -138,7 +133,6 @@ export default function Portfolio() {
                 objectFit="fill"
                 borderRadius="10px"
               />
-              {/* </Link> */}
             </Flex>
           </Flex>
           <Flex
