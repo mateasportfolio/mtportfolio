@@ -34,19 +34,20 @@ export const LightboxComponent = ({ open, setOpen }) => {
       close={() => setOpen(false)}
       slides={[
         {
-          src: Faltschachtel,
-          width: 600,
-          height: 800,
-          title: "Faltschachtel",
-          description: "Illustrator",
-        },
-        {
           src: art,
           width: 600,
           height: 800,
           title: "Abstract Planet",
           description: "Illustrator",
         },
+        {
+          src: Faltschachtel,
+          width: 600,
+          height: 800,
+          title: "Faltschachtel",
+          description: "Illustrator",
+        },
+
         {
           src: herz,
           width: 600,

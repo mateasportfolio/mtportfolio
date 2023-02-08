@@ -150,7 +150,7 @@ export default function Portfolio() {
                 href="https://lively-concha-b269df.netlify.app"
                 isExternal
               >
-                Frontend Challenge
+                Bootstrap
                 <Text
                   marginBottom="10px"
                   alignItems="center"
