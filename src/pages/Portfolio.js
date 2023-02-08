@@ -121,7 +121,7 @@ export default function Portfolio() {
                   isExternal
                   rel="alternate"
                   hreflang="en"
-                  to="https://bespoke-lamington-c1551d.netlify.app"
+                  to="https://63e3a846e44c09000742b807--mateatabak.netlify.app/"
                 >
                   UXUI Design Prototype
                 </a>
@@ -148,7 +148,6 @@ export default function Portfolio() {
             >
               <a
                 textAlign="center"
-                // target={"_blank"}
                 rel="noreferrer"
                 href={"https://lively-concha-b269df.netlify.app"}
                 isExternal

@@ -9,8 +9,9 @@ import {
   HStack,
 } from "@chakra-ui/react";
 import React from "react";
-import xsxsa from "../assets/xsxsa.png";
-//import matea from "../assets/matea.jpeg";
+// import xsxsa from "../assets/xsxsa.png";
+// import mmm from "../assets/mmm.png";
+import mateaspace from "../assets/mateaspace.png";
 import Lottie from "lottie-react";
 import spinner from "./../assets/spinner.json";
 
@@ -98,11 +99,15 @@ function Home() {
           maxWidth={{ base: "100vh", md: "130vh", lg: "130vh", xl: "130vh" }}
           borderRadius="full"
           backgroundColor="transparent"
-          boxShadow="2xl"
+          boxShadow="3xl"
           bg="#a26dff"
           boxSize="350px"
-          src={xsxsa}
-          // src={matea}
+          // src={xsxsa}
+          // src={mmm}
+          src={mateaspace}
+          objectFit="cover"
+          width={"350px"}
+          height={"350px"}
         />
       </Flex>
       <HStack maxWidth={300}>
