@@ -98,7 +98,6 @@ export default function Portfolio() {
               borderRadius="10px"
             />
           </Flex>
-
           <Flex
             wrap="wrap"
             gap="20px"
@@ -110,29 +109,28 @@ export default function Portfolio() {
               flexDirection="column"
               cursor="pointer"
             >
-              <Text
-                marginBottom="10px"
-                alignItems="center"
-                justifyContent="center"
+              <a
                 textAlign="center"
+                rel="noreferrer"
+                href={"https://bespoke-lamington-c1551d.netlify.app"}
+                isExternal
               >
-                <a
-                  href="https://bespoke-lamington-c1551d.netlify.app"
-                  isExternal
-                  rel="alternate"
-                  hreflang="en"
-                  to="https://63e3a846e44c09000742b807--mateatabak.netlify.app/"
+                <Text
+                  marginBottom="10px"
+                  alignItems="center"
+                  justifyContent="center"
+                  textAlign="center"
                 >
                   UXUI Design Prototype
-                </a>
-              </Text>
-              <Image
-                src={mohn2}
-                height="320px"
-                width="320px"
-                objectFit="fill"
-                borderRadius="10px"
-              />
+                </Text>
+                <Image
+                  src={mohn2}
+                  height="320px"
+                  width="320px"
+                  objectFit="fill"
+                  borderRadius="10px"
+                />
+              </a>
             </Flex>
           </Flex>
           <Flex
