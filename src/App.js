@@ -3,8 +3,6 @@ import { VStack, useColorMode } from "@chakra-ui/react";
 import { Route, Routes } from "react-router-dom";
 import { Header } from "./components/Header";
 import Home from "./pages/Home";
-import Code from "./pages/Code";
-import Hosting from "./pages/Hosting";
 import Art from "./pages/Art";
 import AboutMe from "./pages/AboutMe";
 import Portfolio from "./pages/Portfolio";
@@ -23,8 +21,8 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/aboutme" element={<AboutMe />} />
           <Route path="/art" element={<Art />} />
-          <Route path="/code" element={<Code />} />
-          <Route path="/hosting" element={<Hosting />} />
+          {/* <Route path="/code" element={<Code />} /> */}
+          {/* <Route path="/hosting" element={<Hosting />} /> */}
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/savings-calculator" element={<SavingsCalculator />} />
           <Route path="/meditation-timer" element={<MeditationTimer />} />
