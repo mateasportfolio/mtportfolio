@@ -47,12 +47,6 @@ export const Header = ({ isDark, toggleColorMode }) => {
             <Link to="/">Home</Link>
           </MenuItem>
           <MenuItem>
-            <Link to="/code">Code</Link>
-          </MenuItem>
-          <MenuItem color="pink.200">
-            <Link to="/hosting">Hosting</Link>
-          </MenuItem>
-          <MenuItem>
             <Link to="/art">Art</Link>
           </MenuItem>
           <MenuItem color="pink.200">
