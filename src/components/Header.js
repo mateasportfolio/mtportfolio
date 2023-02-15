@@ -1,13 +1,6 @@
 import React from "react";
-import {
-  Flex,
-  IconButton,
-  Button,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-} from "@chakra-ui/react";
+import { ArrowRightIcon } from "@chakra-ui/icons";
+import { Flex, IconButton } from "@chakra-ui/react";
 import {
   FaSun,
   FaMoon,
@@ -15,6 +8,7 @@ import {
   FaFreeCodeCamp,
   FaGithub,
 } from "react-icons/fa";
+import { Breadcrumb, BreadcrumbItem, BreadcrumbLink } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
 export const Header = ({ isDark, toggleColorMode }) => {
@@ -26,38 +20,40 @@ export const Header = ({ isDark, toggleColorMode }) => {
     <Flex
       justifyContent="space-between"
       display="flex"
+      flexWrap="wrap-reverse"
       size="md"
-      fontWeight="semibold"
+      fontWeight="{hairline}"
       color="purple.400"
       width="100%"
     >
-      <Menu colorScheme="pink" size="2xl">
-        <MenuButton
-          colorScheme="yellow.100"
-          as={Button}
-          p={4}
-          bgGradient="linear(to-r, purple.400, cyan.500, blue.600)"
-          textColor="white"
-          outline="#00bcd4"
-        >
-          Menu
-        </MenuButton>
-        <MenuList>
-          <MenuItem color="pink.200">
+      <Breadcrumb
+        w={[300, 400, 500]}
+        position={"relative"}
+        size="2xl"
+        spacing="8px"
+        separator={<ArrowRightIcon color="blue.300" />}
+      >
+        <BreadcrumbItem>
+          <BreadcrumbLink flexWrap={"wrap"} fontSize="2xl" fontWeight={"thin"}>
             <Link to="/">Home</Link>
-          </MenuItem>
-          <MenuItem>
-            <Link to="/art">Art</Link>
-          </MenuItem>
-          <MenuItem color="pink.200">
-            <Link to="/aboutme">About Me</Link>
-          </MenuItem>
-          <MenuItem>
+          </BreadcrumbLink>
+        </BreadcrumbItem>
+        <BreadcrumbItem>
+          <BreadcrumbLink flexWrap={"wrap"} fontSize="2xl" fontWeight={"thin"}>
             <Link to="/portfolio">Portfolio</Link>
-          </MenuItem>
-        </MenuList>
-      </Menu>
-
+          </BreadcrumbLink>
+        </BreadcrumbItem>
+        <BreadcrumbItem isCurrentPage>
+          <BreadcrumbLink flexWrap={"wrap"} fontSize="2xl" fontWeight={"thin"}>
+            <Link to="/art">Art</Link>
+          </BreadcrumbLink>
+        </BreadcrumbItem>
+        <BreadcrumbItem isCurrentPage>
+          <BreadcrumbLink flexWrap={"wrap"} fontSize="2xl" fontWeight={"thin"}>
+            <Link to="/aboutme">About Me</Link>
+          </BreadcrumbLink>
+        </BreadcrumbItem>
+      </Breadcrumb>
       <Flex gap={2}>
         <IconButton
           outline="#00bcd4"

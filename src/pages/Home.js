@@ -9,8 +9,6 @@ import {
   HStack,
 } from "@chakra-ui/react";
 import React from "react";
-// import xsxsa from "../assets/xsxsa.png";
-// import mmm from "../assets/mmm.png";
 import mateaspace from "../assets/mateaspace.png";
 import Lottie from "lottie-react";
 import spinner from "./../assets/spinner.json";
@@ -52,11 +50,11 @@ function Home() {
           padding="100px"
           fontFamily="body"
         >
-          Hello,
-          <br />
-          <span> I'm</span>
+          Hello, <span>I'm</span> <br />
           <Text
             textAlign="start"
+            justifyContent="stretch"
+            alignSelf="flex-end"
             fontSize="7xl"
             fontWeight="hairline"
             bgGradient="linear(to-r, purple.400, cyan.500, blue.600)"
@@ -82,8 +80,8 @@ function Home() {
       </Flex>
 
       <Flex
-        padding={16}
-        margin={120}
+        padding="2px"
+        margin="100px"
         display="flex"
         flexDirection="row"
         alignItems="flex-end"
