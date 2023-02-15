@@ -80,8 +80,8 @@ function Home() {
       </Flex>
 
       <Flex
-        padding="2px"
-        margin="100px"
+        padding={20}
+        margin={10}
         display="flex"
         flexDirection="row"
         alignItems="flex-end"
