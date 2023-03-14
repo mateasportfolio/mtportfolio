@@ -11,12 +11,24 @@ import confetti from "../assets/confetti.json";
 import mohn2 from "../assets/mohn2.png";
 import front from "../assets/portfolio/front.png";
 import { Link } from "react-router-dom";
+import binaryBrain from "../assets/portfolio/binaryBrain.png";
 
 export default function Portfolio() {
   const [open, setOpen] = useState(false);
 
   return (
     <>
+      <Box>
+        <Image
+          src={binaryBrain}
+          height={400}
+          width={400}
+          position="relative"
+          objectFit="fill"
+          borderRadius="10px"
+          p
+        />
+      </Box>
       <Flex w="100%" padding="10" flexDir="column" maxW="1200px">
         {" "}
         <Box textAlign="center" marginBottom="16px">
@@ -98,6 +110,7 @@ export default function Portfolio() {
               borderRadius="10px"
             />
           </Flex>
+
           <Flex
             wrap="wrap"
             gap="20px"
@@ -170,6 +183,7 @@ export default function Portfolio() {
           </Flex>
         </Flex>
       </Flex>
+
       <Lottie
         animationData={confetti}
         position="absolute"
