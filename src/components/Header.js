@@ -35,7 +35,9 @@ export const Header = ({ isDark, toggleColorMode }) => {
       >
         <BreadcrumbItem>
           <BreadcrumbLink flexWrap={"wrap"} fontSize="2xl" fontWeight={"thin"}>
-            <Link to="/">Home</Link>
+            <Link colorSheme="red.300" to="/">
+              Home
+            </Link>
           </BreadcrumbLink>
         </BreadcrumbItem>
         <BreadcrumbItem>

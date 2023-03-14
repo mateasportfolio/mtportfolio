@@ -27,6 +27,7 @@ import "yet-another-react-lightbox/styles.css";
 import herz from "../assets/herz.png";
 import art from "../assets/portfolio/art.png";
 import banner from "../assets/portfolio/banner.png";
+import it from "../assets/portfolio/it.png";
 
 export const LightboxComponent = ({ open, setOpen }) => {
   return (
@@ -116,6 +117,13 @@ export const LightboxComponent = ({ open, setOpen }) => {
           height: 800,
           title: "Tyographie",
           description: "Illustrator und InDesign",
+        },
+        {
+          src: it,
+          width: 600,
+          height: 800,
+          title: "IT Design",
+          description: "Figma",
         },
       ]}
       plugins={[Captions, Thumbnails]}
