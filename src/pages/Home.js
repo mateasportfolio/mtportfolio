@@ -97,15 +97,13 @@ function Home() {
           maxWidth={{ base: "100vh", md: "130vh", lg: "130vh", xl: "130vh" }}
           borderRadius="full"
           backgroundColor="transparent"
-          boxShadow="3xl"
+          boxShadow="4xl"
           bg="#a26dff"
-          boxSize="350px"
-          // src={xsxsa}
-          // src={mmm}
+          boxSize="400px"
           src={mateaspace}
           objectFit="cover"
-          width={"350px"}
-          height={"350px"}
+          width={"400px"}
+          height={"400px"}
         />
       </Flex>
       <HStack maxWidth={300}>
