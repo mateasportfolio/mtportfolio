@@ -7,7 +7,7 @@ import calculator from "../assets/calculator.png";
 import Faltschachtel from "../assets/portfolio/Faltschachtel.png";
 import { LightboxComponent } from "../components/Lightbox";
 import Lottie from "lottie-react";
-import confetti from "../assets/confetti.json";
+import hardware from "../assets/portfolio/hardware.json";
 import mohn2 from "../assets/mohn2.png";
 import front from "../assets/portfolio/front.png";
 import { Link } from "react-router-dom";
@@ -16,10 +16,19 @@ import binaryBrain from "../assets/portfolio/binaryBrain.png";
 export default function Portfolio() {
   const [open, setOpen] = useState(false);
 
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: hardware,
+    rendererSettings: {
+      scale: 2, // Set the scale factor to 2 (double the size)
+    },
+  };
+
   return (
     <>
       <Box>
-        <Image
+        {/* <Image
           src={binaryBrain}
           height={400}
           width={400}
@@ -27,7 +36,7 @@ export default function Portfolio() {
           objectFit="fill"
           borderRadius="10px"
           p
-        />
+        /> */}
       </Box>
       <Flex w="100%" padding="10" flexDir="column" maxW="1200px">
         {" "}
@@ -87,6 +96,19 @@ export default function Portfolio() {
                 borderRadius="10px"
               />
             </Flex>
+            <Box>
+              {" "}
+              {/* <Image
+                src={binaryBrain}
+                height={400}
+                width={400}
+                position="relative"
+                objectFit="fill"
+                borderRadius="10px"
+                p
+              /> */}
+              <Lottie animationData={hardware} options={defaultOptions} />
+            </Box>
           </Link>
           <Flex
             border="1px solid pink"
@@ -146,6 +168,16 @@ export default function Portfolio() {
               </a>
             </Flex>
           </Flex>
+          <Image
+            src={binaryBrain}
+            height={400}
+            width={400}
+            position="relative"
+            objectFit="fill"
+            borderRadius="10px"
+            p
+          />
+          {/* <Lottie animationData={hardware} options={defaultOptions} /> */}
           <Flex
             wrap="wrap"
             gap="20px"
@@ -184,13 +216,6 @@ export default function Portfolio() {
         </Flex>
       </Flex>
 
-      <Lottie
-        animationData={confetti}
-        position="absolute"
-        speed="8"
-        loop={false}
-        autoPlay={true}
-      />
       <LightboxComponent open={open} setOpen={setOpen} />
     </>
   );

@@ -29,6 +29,7 @@ import art from "../assets/portfolio/art.png";
 import banner from "../assets/portfolio/banner.png";
 import it from "../assets/portfolio/it.png";
 
+
 export const LightboxComponent = ({ open, setOpen }) => {
   return (
     <Lightbox
