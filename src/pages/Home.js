@@ -10,7 +10,8 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 // import mateaspace from "../assets/mateaspace.png";
-import nova from "../assets/nova.png";
+// import nova from "../assets/nova.png";
+import novaa from "../assets/novaa.png";
 import Lottie from "lottie-react";
 import spinner from "./../assets/spinner.json";
 
@@ -101,7 +102,7 @@ function Home() {
           boxShadow="4xl"
           bg="#a26dff"
           boxSize="400px"
-          src={nova}
+          src={novaa}
           objectFit="cover"
           width={"400px"}
           height={"400px"}
