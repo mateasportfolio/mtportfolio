@@ -11,6 +11,7 @@ import Lodge4 from "../assets/portfolio/Lodge4.png";
 import Lodge5 from "../assets/portfolio/Lodge5.png";
 import Lodge6 from "../assets/portfolio/Lodge6.png";
 import Lodge7 from "../assets/portfolio/Lodge7.png";
+import poster from "../assets/poster.png";
 import KornSchrot_Seite_1 from "../assets/portfolio/KornSchrot_Seite_1.png";
 import KornSchrot2 from "../assets/portfolio/KornSchrot2.png";
 import KornSchrot_Seite_3 from "../assets/portfolio/KornSchrot_Seite_3.png";
@@ -29,7 +30,6 @@ import art from "../assets/portfolio/art.png";
 import banner from "../assets/portfolio/banner.png";
 import it from "../assets/portfolio/it.png";
 
-
 export const LightboxComponent = ({ open, setOpen }) => {
   return (
     <Lightbox
@@ -42,6 +42,13 @@ export const LightboxComponent = ({ open, setOpen }) => {
           height: 800,
           title: "Abstract Planet",
           description: "Illustrator",
+        },
+        {
+          src: poster,
+          width: 600,
+          height: 800,
+          title: "Poster Vernisage",
+          description: "Photoshop",
         },
         {
           src: Faltschachtel,
