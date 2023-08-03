@@ -29,6 +29,7 @@ import herz from "../assets/herz.png";
 import art from "../assets/portfolio/art.png";
 import banner from "../assets/portfolio/banner.png";
 import it from "../assets/portfolio/it.png";
+import rooftop from "../assets/portfolio/rooftop.png";
 
 export const LightboxComponent = ({ open, setOpen }) => {
   return (
@@ -42,6 +43,13 @@ export const LightboxComponent = ({ open, setOpen }) => {
           height: 800,
           title: "Abstract Planet",
           description: "Illustrator",
+        },
+        {
+          src: rooftop,
+          width: 600,
+          height: 800,
+          title: "Mockup Website",
+          description: "Elementor",
         },
         {
           src: poster,
