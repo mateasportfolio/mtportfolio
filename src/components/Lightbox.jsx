@@ -30,6 +30,7 @@ import art from "../assets/portfolio/art.png";
 import banner from "../assets/portfolio/banner.png";
 import it from "../assets/portfolio/it.png";
 import rooftop from "../assets/portfolio/rooftop.png";
+import flyer from "../assets/portfolio/vorne.png";
 
 export const LightboxComponent = ({ open, setOpen }) => {
   return (
@@ -43,6 +44,13 @@ export const LightboxComponent = ({ open, setOpen }) => {
           height: 800,
           title: "Abstract Planet",
           description: "Illustrator",
+        },
+        {
+          src: flyer,
+          width: 600,
+          height: 800,
+          title: "Flyer",
+          description: "Figma",
         },
         {
           src: rooftop,

@@ -9,7 +9,6 @@ import { LightboxComponent } from "../components/Lightbox";
 import Lottie from "lottie-react";
 import hardware from "../assets/portfolio/hardware.json";
 import mohn2 from "../assets/mohn2.png";
-
 import front from "../assets/portfolio/front.png";
 import { Link } from "react-router-dom";
 import binaryBrain from "../assets/portfolio/binaryBrain.png";
