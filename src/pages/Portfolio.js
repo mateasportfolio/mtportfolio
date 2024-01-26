@@ -12,7 +12,7 @@ import mohn2 from "../assets/mohn2.png";
 import front from "../assets/portfolio/front.png";
 import { Link } from "react-router-dom";
 import binaryBrain from "../assets/portfolio/binaryBrain.png";
-
+import solar3 from "../assets/solar3.png";
 export default function Portfolio() {
   const [open, setOpen] = useState(false);
 
@@ -195,7 +195,7 @@ export default function Portfolio() {
                   Solar Regina GmbH
                 </Text>
                 <Image
-                  src={mohn2}
+                  src={solar3}
                   height="320px"
                   width="320px"
                   objectFit="fill"
