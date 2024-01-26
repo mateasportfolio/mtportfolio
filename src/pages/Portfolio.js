@@ -167,16 +167,44 @@ export default function Portfolio() {
                 />
               </a>
             </Flex>
+            <Image
+              src={binaryBrain}
+              height={400}
+              width={400}
+              position="relative"
+              objectFit="fill"
+              borderRadius="10px"
+            />
+            <Flex
+              border="1px solid pink"
+              flexDirection="column"
+              cursor="pointer"
+            >
+              <a
+                textAlign="center"
+                rel="noreferrer"
+                href={"https://capable-lollipop-3d94e6.netlify.app"}
+                isExternal
+              >
+                <Text
+                  marginBottom="10px"
+                  alignItems="center"
+                  justifyContent="center"
+                  textAlign="center"
+                >
+                  Solar Regina GmbH
+                </Text>
+                <Image
+                  src={mohn2}
+                  height="320px"
+                  width="320px"
+                  objectFit="fill"
+                  borderRadius="10px"
+                />
+              </a>
+            </Flex>
           </Flex>
-          <Image
-            src={binaryBrain}
-            height={400}
-            width={400}
-            position="relative"
-            objectFit="fill"
-            borderRadius="10px"
-            p
-          />
+
           {/* <Lottie animationData={hardware} options={defaultOptions} /> */}
           <Flex
             wrap="wrap"
