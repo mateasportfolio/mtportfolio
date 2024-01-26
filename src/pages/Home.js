@@ -72,7 +72,8 @@ function Home() {
             fontWeight="hairline"
           >
             <span>
-              I'm a future Mediadesigner / Webdesigner <br />
+              I'm a Mediadesigner / Webdesigner.
+              <br />
               <span>
                 I'm a Free Spirit, exploring Art, Music and Technology.
               </span>
